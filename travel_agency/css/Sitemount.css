@@ -582,10 +582,11 @@ header .headblock .man img {
 }
 .clients p {
     float: left;
+    padding: 0 5%;
     text-align: left;
     line-height: 25px;
 
-    width: 50%;
+    width: 40%;
 
     color: rgba(0, 0, 0, 0.4);
 
