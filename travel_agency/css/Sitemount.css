@@ -1,0 +1,670 @@
+@font-face {
+    font-family: Bringin;
+    src: url("fonts/Bringin Script Font/Bringin.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+}
+header {
+    height: 700px;
+    background-image: url("img/sitemount2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .headblock {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+
+    color: #ffffff;
+}
+nav {
+    margin: 0 auto;
+    height: 86px;
+    width: 80%;
+
+    background-color: rgba(255,255,255,0.2);
+
+}
+header .headblock nav div {
+    float:left;
+    padding: 0 9px;
+    line-height: 86px;
+}
+header .headblock nav div a {
+    text-decoration: none;
+    color: darkblue;
+    font-family: "Bringin","Open Sans", Verdana, sans-serif;
+    font-size: 30px;
+}
+header .headblock nav div a span{
+    color: burlywood;
+}
+header .headblock nav ul {
+
+    list-style-type: none;
+}
+
+header .headblock nav ul li {
+    float: left;
+    padding: 0 9px;
+
+
+}
+header .headblock nav ul li a {
+    line-height: 86px;
+    text-decoration: none;
+    color: darkblue;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+header .headblock nav ul li:hover a {
+    padding-bottom: 20px;
+    box-shadow: 0 3px 0 #33acfe;
+}
+header .headblock nav .btn-default {
+    float:right;
+    padding: 7px 29px;
+    margin-top: 24px;
+
+
+
+    border: 2px solid #33acfe;
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: "Open Sans", Verdana, sans-serif;
+    color: #33acfe;
+}
+header .headblock .msg {
+    display: block;
+    top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 80%;
+    border: 2px solid #ffffff;
+    border-bottom: none;
+    color: black;
+    font-family: "Open Sans", Verdana, sans-serif;
+
+}
+header .headblock .msg:after {content: "";
+    width: 100%;
+    border-bottom: 2px solid #ffffff;
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+header .headblock .msg .inside{
+    padding: 10px 20px;
+}
+header .headblock .msg h2{
+    line-height: 27px;
+}
+header .headblock .msg h2 span {
+    font-family: "Bringin","Open Sans", Verdana, sans-serif;
+    color: #33acfe;
+    font-size: 70px;
+}
+header .headblock .msg p{
+    color: darkblue;
+}
+header .headblock .msg .btn-default {
+    padding: 7px 29px;
+
+    border: 2px solid #33acfe;
+    border-radius: 5px;
+    background-color: #33acfe;
+    font-family: "Open Sans", Verdana, sans-serif;
+    color: white;
+}
+header .headblock .man img {
+    height: 530px;
+    position: absolute;
+    top: 180px;
+    left: 760px;
+    z-index: 0;
+}
+.about_us {
+    height: 500px;
+    position: relative;
+    
+    background-color: rgb(246, 244, 244);
+}
+.about_us .info {
+    width: 80%;
+    top: 30%;
+    margin: 0 auto;
+    height: 500px;
+    display: block;
+
+
+    background-image: url("img/dotted-world.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 30%;
+}
+.about_us .info .info_text {
+    position: absolute;
+    top: 46%;
+    color: black;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+.about_us .info .info_text .btn-default {
+    padding: 7px 29px;
+
+    border: 2px solid #33acfe;
+    border-radius: 5px;
+    background-color: #33acfe;
+    font-family: "Open Sans", Verdana, sans-serif;
+    color: white;
+}
+.about_us .big {
+    position: absolute;
+    top: -9%;
+    right: 5%;
+    height: 94%;
+}
+.about_us .small {
+    position: absolute;
+    top: 42%;
+    right: 33%;
+    height: 53%;
+}
+.our_journal {
+    width: 80%;
+    margin: 0 auto;
+    height: 650px;
+}
+.our_journal h3 {
+    text-align: center;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+.our_journal .col-4 {
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 95%;
+    float: left;
+}
+.our_journal .col-4 .quadrat_img,
+.our_journal .col-4 .quadrat_text
+{
+    width: 100%;
+    height: 50%;
+    float: left;
+    position: relative;
+}
+
+.our_journal h5,
+.our_journal p {
+    width: 350px;
+    padding: 20px;
+
+    text-align: center;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+.our_journal span {
+    color: #33acfe;
+    font-weight: bold;
+    font-style: normal;
+}
+.our_journal h5 {
+    font-weight: bold;
+}
+.our_journal p {
+    font-style: italic;
+    font-size: smaller;
+    margin-top: 20px;
+}
+.our_journal .triangle_left {
+    position: absolute;
+    top: 20%;
+    left: -5%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 20px solid #ffffff;
+    border-bottom: 15px solid transparent;
+}
+.our_journal .triangle_right {
+    position: absolute;
+    bottom: 20%;
+    right: -5%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 20px solid #ffffff;
+    border-bottom: 15px solid transparent;
+    z-index: 1;
+}
+.our_journal .triangle_up {
+    position: absolute;
+    top: -5%;
+    left: 20%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #ffffff;
+}
+.our_journal .square1 .quadrat_img {
+    background-image: url("img/love.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our_journal .square3 .quadrat_img {
+    background-image: url("img/lake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our_journal .square2 .quadrat_img {
+    background-image: url("img/tree.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our_journal .square1 .quadrat_img img,
+.our_journal .square2 .quadrat_img img,
+.our_journal .square3 .quadrat_img img {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    height: 50px;
+}
+.get_data {
+    background-image: url("img/sitemount1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+.get_data .inner_text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-family: "Open Sans", Verdana, sans-serif;
+    color: aliceblue;
+}
+.get_data .input_form {
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.get_data .input_form .btn-default {
+    padding: 7px 29px;
+
+    border: 2px solid #33acfe;
+    border-radius: 5px;
+    background-color: #33acfe;
+    font-family: "Open Sans", Verdana, sans-serif;
+    color: white;
+}
+.principles {
+    width: 80%;
+    margin: 0 auto;
+    height: 350px;
+}
+.principles h3 {
+    text-align: center;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+.principles .col-3 {
+    box-sizing: border-box;
+    width: 25%;
+    height: 95%;
+    float: left;
+    position: relative;
+}
+.principles .col-3 .circle {
+    position: absolute;
+    left: 104px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+    border: 2px solid #33acfe;
+    line-height: 25px;
+    text-align: center;
+    color: #33acfe;
+}
+.principles .col-3 .hexagon {
+    width: 100px;
+    height: 0;
+    position: absolute;
+    left: 72px;
+    top: 66px;
+}
+.principles .col-3 .hexagon,
+.principles .col-3 .hexagon:before,
+.principles .col-3 .hexagon:after {
+    background: #ffffff;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+}
+.principles .col-3 .hexagon:before,
+.principles .col-3 .hexagon:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 22px;
+    width: 57px;
+    height: 57px;
+    transform: rotate(145deg) skew(22.5deg);
+}
+/*.principles .col-3 .hexagon:before {*/
+    /*top: -29px;*/
+/*}*/
+.principles .col-3 .hexagon:after {
+    top: 27px;
+}
+.principles .col-3 .hexagon span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 55px;
+    background:#ffffff;
+    z-index: 1;
+}
+.principles .col-3 .hexagon span img {
+    position: absolute;
+    height: 40px;
+    left: 30px;
+}
+.principles .col-3 .text{
+    position: absolute;
+    top: 140px;
+}
+
+.principles .col-3 p {
+    text-align: center;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.principles .col-3 h4 {
+    text-align: center;
+    line-height: 41px;
+}
+.propositions {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    display: block;
+
+    background-image: url("img/dotted-world.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 30%;
+}
+.propositions h3 {
+    text-align: center;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+.propositions .col-2 {
+    box-sizing: border-box;
+    width: 19%;
+    height: 95%;
+    float: left;
+    position: relative;
+}
+.propositions .mountains1 {
+    background-image: url("img/mountains/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+
+    margin-right: 10px;
+}
+.propositions .mountains2 {
+    background-image: url("img/mountains/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+
+    margin-right: 10px;
+}
+.propositions .mountains3 {
+    background-image: url("img/mountains/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+
+    margin-right: 10px;
+}
+.propositions .mountains4 {
+    background-image: url("img/mountains/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+
+    margin-right: 10px;
+}
+.propositions .mountains5 {
+    background-image: url("img/mountains/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.propositions h4 {
+    padding-top: 100px;
+
+    text-align: center;
+    color: #f5f5f5;
+}
+.propositions p, span {
+    padding: 10px 5px;
+
+    line-height: 25px;
+    text-align: center;
+    color: #f5f5f5;
+}
+.propositions .transparent {
+    background-color: rgba(0, 0 , 0, 0.5);
+}
+.propositions .transparent p {
+    float: left;
+    text-decoration: line-through;
+}
+.propositions .transparent span {
+    float: right;
+    font-weight: bold;
+    font-size:  25px;
+}
+.picture {
+    position: relative;
+    height: 100px;
+}
+.picture img {
+    opacity: 0.4;
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: -350px;
+    z-index: -1;
+}
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    display: block;
+}
+.gallery  h3 {
+    text-align: center;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+.gallery .col-2 {
+    height: 100%;
+    width: 27%;
+    float: left;
+}
+.gallery .col-4 {
+    height: 100%;
+    width: 33%;
+    float: left;
+}
+.gallery .col-6 {
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+.gallery .col-2 .p1 {
+    width: 100%;
+    height: 53%;
+    display: block;
+    padding: 5px;
+}
+.gallery .col-2 .p2 {
+    width: 100%;
+    height: 42%;
+    display: block;
+    padding: 5px;
+}
+.gallery .col-4 .p3 {
+    width: 100%;
+    height: 45%;
+    display: block;
+    padding: 5px;
+}
+.gallery .col-4 .p4 {
+    width: 100%;
+    height: 50%;
+    display: block;
+    padding: 5px;
+}
+.gallery .col-6 .p5 {
+    width: 100%;
+    height: 50%;
+    display: block;
+    padding: 5px;
+}
+.gallery .col-6 .p6 {
+    width: 100%;
+    height: 45%;
+    display: block;
+    padding: 5px;
+}
+.line {
+    background-color: rgba(228,248,255,0.4);
+    height: 100px;
+    width: 100%;
+}
+.line .wrapper{
+    margin: 0 auto;
+
+    width: 80%;
+    height: 100%;
+}
+.line .wrapper a {
+    line-height: 70px;
+}
+.line .wrapper a img{
+    width: 3%;
+    margin: 0 8%;
+}
+.line .wrapper a #first{
+    width: 3%;
+    margin-left: 0 !important;
+}
+.line .wrapper a #last{
+    width: 3%;
+    margin-right: 0 !important;
+}
+.clients {
+    width: 80%;
+    margin: 0 auto;
+    height: 125px;
+    display: block;
+}
+.clients  h3 {
+    text-align: center;
+    font-family: "Open Sans", Verdana, sans-serif;
+}
+.clients p {
+    float: left;
+    text-align: left;
+    line-height: 25px;
+
+    width: 50%;
+
+    color: rgba(0, 0, 0, 0.4);
+
+}
+.clients p span {
+    text-align: left;
+    line-height: 25px;
+    color: rgb(51, 172, 254);
+}
+.fone_picture {
+    background-image: url("img/mountains/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 475px;
+}
+.fone_picture .empty {
+    height: 80px;
+}
+.fone_picture .application_form {
+    margin-right: auto;
+    margin-left: auto;
+    height: 340px;
+    width: 300px;
+    background-color: rgba(85, 107, 125, 0.5);
+    text-align: center;
+}
+.fone_picture .application_form > div {
+
+}
+.fone_picture .application_form h3 {
+    padding: 20px;
+    color: rgb(51, 172, 254);
+}
+.fone_picture .application_form input {
+    width:80%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+.fone_picture .application_form .btn-default{
+    width:80%;
+
+    padding: 7px 29px;
+
+    border: 2px solid #33acfe;
+    border-radius: 5px;
+    background-color: #33acfe;
+    font-family: "Open Sans", Verdana, sans-serif;
+    color: white;
+}
+footer{
+    background-color: mediumaquamarine;
+}
+footer .text_content {
+    margin: 0 auto;
+
+    width: 80%;
+    height: 80px;
+
+}
+footer .text_content p {
+    float: left;
+    line-height: 80px;
+    font-size: 18px;
+}
+footer .text_content .fast {
+    float: left;
+    line-height: 80px;
+    width: 77%;
+}
+footer .text_content .fast a {
+    float: left;
+    width: 25%;
+}
+footer .text_content .fast #tumblr {
+    margin-left: 25%;
+}
+footer .text_content h4 {
+    margin: 0;
+    float: right;
+    line-height: 80px;
+    font-size: 18px;
+}
