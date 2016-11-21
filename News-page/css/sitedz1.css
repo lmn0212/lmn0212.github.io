@@ -1,0 +1,875 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Nexa";
+    src: url(/fonts/NexaFreeBoldwebfont.ttf)
+}
+body {
+    background-color: rgb(235,235,235);
+}
+.cocoon {
+    width: 100%;
+    max-width: 2000px;
+    min-width: 613px;
+    margin: 0 auto;
+}
+header.main {
+    width: 100%;
+    background-color: rgb(55,55,55);
+}
+header.main .wrapper {
+    margin: 0 auto;
+    display: block;
+    height: 66px;
+    position: relative;
+    width: 70%;
+}
+header.main .wrapper .logo {
+    margin: 0 auto;
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 66px;
+
+    background-color: rgb(242, 108, 79);
+    font-family: Nexa, Verdana, sans-serif;
+    font-size: 40px;
+    color: rgb(255,255,255);
+
+    text-align: center;
+    line-height: 66px;
+}
+header.main .wrapper .triangle {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -10px;
+    line-height: 66px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 12px solid rgb(242, 108, 79);
+    border-bottom: 10px solid transparent;
+}
+header.main .wrapper .name {
+    padding-left: 34px;
+    position: absolute;
+    margin-top: 0;
+    display: inline-block;
+
+    font-family: Nexa, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(255,255,255);
+    text-align: center;
+    line-height: 69px;
+}
+header.main .wrapper .lang {
+    float: right;
+    line-height: 66px;
+    height: 66px;
+}
+header.main .wrapper .lang img{
+    padding: 14px 0 14px 14px;
+}
+nav {
+    margin: 0 auto;
+    height: 69px;
+    width: 70%;
+
+    background-color: rgb(71,71,71);
+
+    font-family: Nexa, Verdana, sans-serif;
+    font-size: 13px;
+    color: rgb(255,255,255);
+}
+nav .location {
+    height: 20px;
+    padding: 24px;
+    float: left;
+}
+nav div {
+    display: block;
+}
+nav .links {
+    float: right;
+}
+nav .links a .location {
+    height: 20px;
+    padding: 24px;
+    float: right;
+}
+nav .links a {
+    display: block;
+    float: left;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    line-height: 69px;
+}
+nav .links div{
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: rgb(255,255,255);
+    line-height: 69px;
+}
+nav .links a .withbrdr {
+    border-right: 3px solid rgb(118, 118, 118);
+    padding-right: 47px;
+    background-image: url(../img/dz1Location.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 75px;
+}
+nav .links .select .withbrdr {
+    border-right: 3px solid rgb(118, 118, 118);
+    padding: 0 20px;
+}
+nav .links .select ul {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+
+    list-style-type: none;
+    background-color: rgb(71,71,71);
+    border: 2px solid #cccccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .175);
+}
+nav .links .select ul li{
+    float: none;
+}
+nav .links .select ul li a{
+    padding: 0 15px;
+    font-size: 13px;
+}
+
+nav .links .select:hover > ul{
+    display: block;
+    z-index: 1;
+}
+nav .links .select ul li:hover a{
+    display: block;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+nav  div .main {
+    list-style-type:none;
+}
+nav div .main li {
+    float: left;
+    padding: 0 9px;
+    line-height: 69px;
+}
+nav div .main li a{
+    text-decoration: none;
+}
+nav div .main li a span{
+    box-shadow: none;
+    color: rgb(255,255,255);
+}
+
+nav div .main li .withbrdr {
+    border-right: 3px solid rgb(118, 118, 118);
+    padding-right: 18px;
+}
+
+nav div .main li a:hover span{
+    padding-bottom: 20px;
+    box-shadow: 0 3px 0 rgb(242, 108, 79);
+}
+.social {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+    height: 35px;
+    position: relative;
+
+}
+input[type=search] {
+    width: 160px;
+    height: 35px;
+    display: block;
+    position: absolute;
+
+    font-size: 10px;
+    font-family: Nexa, Verdana, monospace;
+    color: rgb(149,149, 149);
+    text-align: justify;
+
+}
+input[type=text] {
+    width: 160px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    margin-left: 168px;
+
+    font-size: 10px;
+    font-family: Nexa, Verdana, monospace;
+    color: rgb(149,149, 149);
+    text-align: justify;
+    background-image: url(../img/dz1Location.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 87px;
+
+}
+.social button{
+    margin-left: 124px;
+    width: 31px;
+    height: 31px;
+    display: block;
+    position: absolute;
+
+    border: none;
+}
+.social .found{
+    margin-left: 300px;
+    width: 31px;
+    height: 31px;
+    display: block;
+    position: absolute;
+
+    border: none;
+}
+.social button img {
+    width: 31px;
+    height: 32px;
+}
+.social > img {
+    margin-left: 168px;
+    height: 33px;
+}
+.social .share {
+    float: right;
+}
+.social .share a {
+    padding: 0 10px;
+
+    font-size: 15px;
+    font-family: Nexa, Verdana, monospace;
+    text-decoration: none;
+    color: rgb(55, 55, 55);
+    line-height: 35px;
+    opacity: 0.4;
+}
+.social .share a img{
+    height: 15px;
+    width: 20px;
+}
+article.main{
+    height: 300px;
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+    position: relative;
+}
+article.main .image{
+    position: relative;
+    float: left;
+    width: 66%;
+    height: 300px;
+    border-right: 7px solid rgb(242, 108, 79);
+    box-sizing: content-box;
+
+    cursor: pointer;
+    background-image: url(../img/dz32.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+article.main .image .caption {
+    position: absolute;
+    padding: 10px 15px;
+    bottom: 0;
+    right: 0;
+
+
+    background-color: rgba(24, 26, 31, .7);
+    color: white;
+    font-size: 20px;
+    font-family: Nexa, Verdana, monospace;
+}
+article.main .image .triangle{
+    position: absolute;
+    top: 9%;
+    left: 100%;
+    margin-top: -10px;
+    line-height: 66px;
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-left: 21px solid rgb(242, 108, 79);
+    border-bottom: 21px solid transparent;
+}
+article.main .text {
+    display: block;
+    float: left;
+    width: 33%;
+    height: 100%;
+    padding-right: 5px;
+    box-sizing: border-box;
+
+    background-color: rgb(55, 55, 55);
+    color: #ffffff;
+}
+article.main .text h2,
+article.main .text p {
+    padding: 20px;
+    font-family: Nexa, Verdana, monospace;
+}
+article.main .text p .right {
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+}
+article.main .text p .left {
+    position: absolute;
+    bottom: 0;
+    right: 38px;
+}
+.left_arrow{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 200px;
+    top: 610px;
+}
+.right_arrow{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 200px;
+    top: 610px;
+}
+.gallery {
+    height: 300px;
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+    position: relative;
+}
+.gallery  .col-4 .inner img {
+    display: block;
+    height: 70%;
+    width: 100%;
+}
+.gallery .col-4:last-child {
+    width: 33.34%;
+    padding-right: 0;
+}
+.gallery .col-4 {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding-right: 20px;
+}
+.gallery .col-4 .inner {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+.gallery .col-4 .inner .caption {
+    display: block;
+    height: 30%;
+    width: 100%;
+
+    background-color: #ffffff;
+    font-size: 10px;
+}
+.gallery .col-4 .inner .caption p,
+.gallery .col-4 .inner .caption h2 {
+    padding: 10px;
+    font-family: Nexa, Verdana, monospace;
+}
+.news {
+    height: 600px;
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+    position: relative;
+}
+.news .col-8 {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 66.66%;
+    float: left;
+    padding-right: 20px;
+}
+.news .col-4 {
+    display: inline-block;
+    width: 33.34%;
+}
+.news .col-4 .inner1 {
+    width: 100%;
+    height: 80%;
+   /* border: 1px solid red;*/
+}
+.news .col-4 img {
+    display: block;
+    height: 70%;
+    width: 100%;
+}
+.news .col-4 .inner2 {
+    width: 100%;
+    height: 20%;
+    /*border: 1px solid red;*/
+}
+.news .col-4 .inner1 .caption p,
+.news .col-4 .inner1 .caption h2,
+.news .col-4 .inner2 .caption p,
+.news .col-4 .inner2 .caption h2{
+    padding: 10px;
+    font-family: Nexa, Verdana, monospace;
+}
+.news .col-4 .inner1 .caption {
+    background-color: rgb(55 ,55, 55);
+    color: #ffffff;
+}
+.news .col-4 .inner2 .caption p {
+    color: rgb(118, 118, 118);
+}
+.news .col-8 .inner1,
+.news .col-8 .inner2,
+.news .col-8 .inner3 {
+    width: 100%;
+    height: 100%;
+
+    /*border: 1px solid red;*/
+    background-color: #ffffff;
+}
+.news .col-8 .inner1 .caption p,
+.news .col-8 .inner1 .caption h2,
+.news .col-8 .inner2 .caption p,
+.news .col-8 .inner2 .caption h2,
+.news .col-8 .inner3 .caption p,
+.news .col-8 .inner3 .caption h2{
+    padding: 10px;
+    font-family: Nexa, Verdana, monospace;
+}
+.news .col-8 .inner1 {
+    height: 20%;
+    border-left: 3px solid rgb(242, 108, 79);
+    font-size: 14px;
+}
+.news .col-8 .inner2 {
+    height: 15%;
+    border-left: 3px solid rgb(143, 143, 143);
+    font-size: 12px;
+}
+.news .col-8 .inner3 {
+    height: 15%;
+    border-left: 3px solid rgb(217, 217, 217);
+    font-size: 10px;
+}
+.news .col-8 div:hover {
+    color: #ffffff;
+    background-color: rgb(242, 108, 79);
+}
+.articles {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+    position: relative;
+}
+.articles .col-8 {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 66.66%;
+    float: left;
+    padding-right: 20px;
+}
+.articles .col-4 {
+    display: block;
+    float: left;
+    width: 33.34%;
+}
+.articles .col-8 .inner1 {
+    width: 100%;
+}
+.articles .col-8 .inner1 div {
+    text-align: center;
+
+    opacity: 0.5;
+}
+.articles .col-8 .inner2 {
+    width: 100%;
+    height: 40px;
+
+    /*border: 1px solid red;*/
+    background-color: #ffffff;
+}
+.articles .col-8 .inner2 a {
+    line-height: 40px ;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    color:rgb(143, 143, 143);
+    opacity: 0.5;
+    text-decoration: none;
+    font-family: Nexa, Verdana, monospace;
+    border-right: 3px solid rgb(118, 118, 118);
+}
+.articles .col-8 .inner2 p {
+    line-height: 40px ;
+    padding-left: 40px;
+
+    display: inline-block;
+
+    color: rgb(242, 108, 79);
+    font-family: Nexa, Verdana, monospace;
+}
+.articles .col-8 .inner2 p span {
+    padding-right: 40px;
+
+    border-right: 3px solid rgb(118, 118, 118);
+    opacity: 0.5;
+}
+.articles .col-8 .inner3 {
+    width: 100%;
+    height: 100%;
+
+
+    background-color: #ffffff;
+    color: rgb(118, 118, 118);
+    font-family: Nexa, Verdana, monospace;
+}
+.articles .col-8 .inner3 .bottom {
+    color: rgb(118, 118, 118);
+    background-color: rgb(235,235,235);
+    box-shadow: 0 3px 10px  rgb(118, 118, 118);
+}
+.articles .col-8 .inner3 .bottom span {
+    padding-left: 40px;
+}
+.articles .col-8 .inner3 img {
+    height: 70%;
+    width: 100%;
+}
+.articles .col-8 .inner3 p,
+.articles .col-8 .inner3 h2 {
+    padding: 10px;
+}
+.articles .col-4 .inner1 p,
+.articles .col-4 .inner1 h2 {
+    font-family: Nexa, Verdana, monospace;
+    padding: 10px;
+}
+.articles .col-4 .inner1 p {
+    color: rgb(118, 118, 118);
+}
+.articles .col-4 .inner1 .bottom {
+    margin-top: 10px;
+    font-family: Nexa, Verdana, monospace;
+
+}
+.articles .col-4 .inner2 {
+    display: block;
+    height: 40px;
+    border-left: 3px solid rgb(217, 217, 217);
+    vertical-align: middle;
+
+    background-color: #ffffff;
+    font-size: 12px;
+    font-family: Nexa, Verdana, monospace;
+    color: rgba(118, 118, 118, 0.6);
+}
+.articles .col-4 .inner2 p {
+    line-height: 40px;
+    padding: 0 10px;
+
+    font-family: Nexa, Verdana, monospace;
+}
+.articles .col-4 .inner2 p span {
+    color: rgb(71, 71, 71);
+}
+.articles .col-4 .inner3 {
+    height: 80px;
+}
+.articles .col-4 .inner3 p {
+    display: inline;
+    line-height: 80px;
+
+    color: rgb(118, 118, 118);
+    font-size: 22px;
+    font-family: Nexa, Verdana, monospace;
+}
+.articles .col-4 .inner3 p img {
+    height: 19px;
+    width: 27px;
+}
+.articles .col-4 .inner3 p span {
+    padding: 20px;
+
+    font-size: 46px;
+    color: rgb(71, 71, 71);
+}
+footer.main {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(55,55,55);
+}
+footer.main .wrapper {
+    margin: 0 auto;
+    display: block;
+    height: 66px;
+    position: relative;
+    width: 70%;
+    background-color: rgb(71,71,71);
+}
+footer.main .wrapper .logo {
+    margin: 0 auto;
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 66px;
+
+    background-color: rgb(242, 108, 79);
+    font-family: Nexa, Verdana, sans-serif;
+    font-size: 40px;
+    color: rgb(255,255,255);
+
+    text-align: center;
+    line-height: 66px;
+}
+footer.main .wrapper .triangle {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -10px;
+    line-height: 66px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 12px solid rgb(242, 108, 79);
+    border-bottom: 10px solid transparent;
+}
+footer.main .wrapper .name {
+    padding-left: 34px;
+    position: absolute;
+    margin-top: 0;
+    display: inline-block;
+
+    font-family: Nexa, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(255,255,255);
+    text-align: center;
+    line-height: 69px;
+}
+footer.main .wrapper div .main {
+    float: right;
+    list-style-type:none;
+    display: inline-block;
+}
+footer.main .wrapper div .main li {
+    float: left;
+    padding: 0 9px;
+    line-height: 69px;
+}
+footer.main .wrapper div .main li a{
+    text-decoration: none;
+    font-family: Nexa, Verdana, sans-serif;
+}
+footer.main .wrapper div .main li a span{
+    box-shadow: none;
+    color: rgb(255,255,255);
+}
+
+footer.main .wrapper div .main li .withbrdr {
+    border-right: 3px solid rgb(118, 118, 118);
+    padding-right: 18px;
+}
+
+footer.main .wrapper div .main li a:hover span {
+    padding-bottom: 20px;
+    box-shadow: 0 3px 0 rgb(242, 108, 79);
+}
+footer.main .bottom {
+    margin: 0 auto;
+    display: block;
+    height: 66px;
+    position: relative;
+    width: 70%;
+}
+footer.main .bottom a {
+    padding-right: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Nexa, Verdana, sans-serif;
+}
+.cocoon {
+    min-width: 615px;
+}
+@media screen and (max-width: 1200px) {
+    header.main .wrapper {
+        margin: 0;
+        width: 100%;
+
+    }
+    nav {
+        margin: 0;
+        width: 100%;
+    }
+    nav img {
+        display: none;
+    }
+    nav div .main li .withbrdr {
+        border-right: none;
+        padding: 0;
+    }
+    nav .links a .withbrdr {
+        border-right: none;
+        padding: 0 2px;
+    }
+    nav .links .select .withbrdr {
+        border-right: none;
+        padding: 0 2px;
+    }
+    nav .links div {
+        font-size: 12px;
+    }
+    .social {
+        margin: 0;
+        width: 100%;
+    }
+    .social input {
+        width: 100px;
+
+    }
+    .social button {
+        margin-left: 68px;
+    }
+    .social > img {
+        margin-left: 103px;
+    }
+    .social .share a {
+        padding: 0;
+    }
+    article.main {
+        margin: 0;
+        width: 100%;
+    }
+    article.main .image {
+        width: 65%;
+    }
+    article.main .text h2,
+    article.main .text p {
+        font-size: 16px;
+    }
+    .left_arrow {
+        left: 0;
+    }
+    .gallery {
+        width: 92%;
+    }
+    .gallery .col-4 .inner .caption p,
+    .gallery .col-4 .inner .caption h2 {
+        padding: 0;
+    }
+    .right_arrow {
+        right: 0;
+    }
+    .news {
+        width: 100%;
+    }
+    .articles {
+        width: 100%;
+    }
+    .articles .col-4 .inner2 {
+        font-size: 9px;
+    }
+    .articles .col-4 .inner3 p {
+        font-size: 13px;
+    }
+    .articles .col-4 .inner3 p span {
+        font-size: 27px;
+    }
+    footer.main .wrapper {
+        width: 100%;
+    }
+    footer.main .wrapper .name {
+        font-size: 15px;
+    }
+    footer.main .wrapper div .main li {
+        padding: 0;
+    }
+    footer.main .wrapper div .main li .withbrdr {
+        border: none;
+    }
+    footer.main .wrapper div .main li a span {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 640px) {
+
+    header.main .wrapper .logo {
+        width: 45px;
+        font-size: 30px;
+    }
+    header.main .wrapper .name {
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    header.main .wrapper .lang img {
+        width: 154px;
+    }
+    nav div .main li {
+        padding: 0px 4px;
+        font-size: 12px;
+    }
+    .social .share {
+        float: left;
+    }
+    article.main .text h2,
+    article.main .text p {
+        font-size: 10px;
+    }
+    .gallery .col-4 {
+        height: 240px;
+        padding-right: 7px
+    }
+    .gallery .col-4 .inner .caption {
+        font-size: 9px;
+    }
+    .articles .col-8 .inner2 a {
+        padding-left: 5px;
+        padding-right: 30px;
+    }
+    .articles .col-8 .inner2 p {
+        padding-left: 30px;
+    }
+    .articles .col-4 .inner2 {
+        font-size: 7px;
+    }
+    .articles .col-4 .inner3 p span {
+        font-size: 18px;
+        padding: 5px;
+    }
+    footer.main .wrapper .logo {
+        width: 45px;
+        font-size: 30px;
+    }
+    footer.main .wrapper .name {
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    footer.main .wrapper div .main li .withbrdr {
+        padding-right: 8px;
+    }
+    footer.main .wrapper div .main li a span {
+        font-size: 12px;
+    }
+    footer.main .bottom {
+        width: 100%;
+    }
+    footer.main .bottom a {
+        padding-right: 10px;
+    }
+}
