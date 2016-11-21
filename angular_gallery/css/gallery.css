@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.ng-scope {
+    background-color: aliceblue;
+}
+/*albumlist page*/
+.galleries {
+    margin: 0 auto;
+
+    width: 60%;
+
+    border: 3px solid red;
+    background-color: white;
+
+}
+.galleries ul {
+    list-style: none;
+    margin: 20px;
+
+    background-color: white;
+}
+.galleries ul li {
+    background-color: white;
+}
+.galleries ul .thumbnail .text {
+    text-decoration: none;
+    font: bold 40px Helvetica sans-serif;
+    color: #122b40;
+    line-height: 70px;
+
+
+}
+.galleries ul .thumbnail .t_gallery {
+    text-align: center;
+}
+.galleries ul .thumbnail .t_gallery a {
+    text-decoration: none;
+    background-color: white;
+}
+.galleries ul .thumbnail .thumb img {
+    width: 90px;
+
+    vertical-align: bottom;
+    background-color: white;
+}
+
+/*album page*/
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+.wrapper .picture {
+    float: left;
+    margin: 15px;
+
+
+    width: 30%;
+    height: 350px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+
+}
+.wrapper .picture a {
+    text-decoration: none;
+    color: #003300;
+}
+.wrapper .picture a .container {
+    text-align: center;
+    padding: 10px 20px;
+    height: 20%;
+
+}
+.wrapper .picture a img {
+    height: 80%;
+    width: 95%;
+}
+/*photo page*/
+.big_photo {
+    width: 80%;
+    margin: 0 auto;
+}
+.big_photo img {
+    width: 100%;
+}

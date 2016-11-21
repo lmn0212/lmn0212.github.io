@@ -1,0 +1,29 @@
+{
+    "title": "Bikes",
+    "images": [
+        {
+            "src": "http://pngimg.com/upload/motorcycle_PNG3130.png",
+            "title": "Honda"
+        },
+        {
+            "src": "http://www.ibikes.in/features/images/royal-enfield-thunderbird-500-1.jpg",
+            "title": "Royal Enfield"
+        },
+        {
+            "src": "http://www.motorcycledaily.com/wp-content/uploads/2010/07/TU250X_Blk_Gray.png",
+            "title": "Suzuki"
+        },
+        {
+            "src": "http://1.bp.blogspot.com/-LkHR_I1VarE/T-RuosybakI/AAAAAAAAJyk/gzUon8xFf8Y/s1600/KawasakiNinja-2.png",
+            "title": "Kawasaki"
+        },
+        {
+            "src": "http://www.yamaha-motor.com.ph/product/yzf-r3/img/r3-mattegray_b.png",
+            "title": "Yamaha"
+        },
+        {
+            "src": "http://www.motorstown.com/images/yamaha-r-f-06.jpg",
+            "title": "Yamaha R15"
+        }
+    ]
+}

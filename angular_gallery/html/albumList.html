@@ -1,0 +1,15 @@
+
+<div class="galleries">
+    <ul>
+    <li ng-repeat="gallery in galleries" class="thumbnail">
+        <div class="t_gallery">
+            <a href="#album/{{gallery.title}}" class="text">{{gallery.title}}</a>
+        </div>
+        <div class="t_gallery">
+            <a href="#album/{{gallery.title}}" class="thumb" ng-repeat="image in gallery.images">
+                <img ng-src="{{image.src}}" alt="{{gallery.title}}" width="20px">
+            </a>
+        </div>
+    </li>
+    </ul>
+</div>

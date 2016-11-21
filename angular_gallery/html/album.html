@@ -1,0 +1,15 @@
+
+
+<h1>{{gallery.title}}</h1>
+
+<div class="wrapper" >
+       <div ng-repeat="image in gallery.images" class="picture">
+            <a href="#album/{{galleryTitle}}/photo/{{image.title}}">
+                <img ng-src="{{image.src}}">
+                <div class="container">
+                    <p>{{image.title}}</p>
+                </div>
+            </a>
+       </div> <br>
+</div>
+
