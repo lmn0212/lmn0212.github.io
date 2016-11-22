@@ -117,6 +117,7 @@ header .headblock .msg .btn-default {
     border: 2px solid #33acfe;
     border-radius: 5px;
     background-color: #33acfe!important;
+    background-image: none!important;
     font-family: "Open Sans", Verdana, sans-serif;
     color: white;
 }
