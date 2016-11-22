@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title>LMN Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+    body, h1,h2,h3,h4,h5,h6{font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidenav to 120px */
+    .w3-sidenav {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidenav (120px) */
+    #main {margin-left: 120px}
+</style>
+<body>
+
+<!-- Icon Bar (Sidenav - hidden on small screens) -->
+<nav>
+    <!-- Avatar image in top left corner -->
+    <img src="images/0001.jpg" style="width:100%">
+    <a id="first" href="#">
+        <i class="fa fa-home"></i>
+        <p>HOME</p>
+    </a>
+    <a href="#about">
+        <i class="fa fa-user"></i>
+        <p>ABOUT</p>
+    </a>
+    <a href="#projects">
+        <i class="fa fa-file-o"></i>
+        <p>PROJECTS</p>
+    </a>
+    <a href="#contact">
+        <i class="fa fa-envelope"></i>
+        <p>CONTACT</p>
+    </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div id="myNavbar">
+    <ul>
+        <li style="width:25% !important"><a href="#">HOME</a></li>
+        <li style="width:25% !important"><a href="#about">ABOUT</a></li>
+        <li style="width:25% !important"><a href="#projects">PROJECTS</a></li>
+        <li style="width:25% !important"><a href="#contact">CONTACT</a></li>
+    </ul>
+</div>
+
+<!-- Page Content -->
+<div id="main">
+    <!-- Header/Home -->
+    <header id="home">
+        <h1>Leonid Nykytiuk</h1>
+        <p>Junior front-end developer.</p>
+        <img src="images/office-82.svg" alt="mark" width="200" height="200">
+    </header>
+
+    <!-- About Section -->
+    <div id="about">
+        <h2>About me</h2>
+        <hr style="width:200px">
+        <p>Graduated from Computer Academy "STEP" in the field "Creating WEB-projects, SEO"
+            Besides I'm regularly learning from courses on particular services such as codecademy.com, codeschool.com, prometheus.org.ua and others.
+        </p>
+        <h3>My Skills</h3>
+        <p class="quality">Front-end</p>
+        <div>
+            <div>HTML, CSS, SASS, LESS, Bootstrap, Javascript, jQuery, Angular JS, Ajax, OOP, MVC.</div>
+        </div>
+        <p class="quality">Back-end</p>
+        <div>
+            <div>PHP, MySQL, Yii Framework</div>
+        </div>
+        <p class="quality">CMS</p>
+        <div>
+            <div>Joomla, WordPress.</div>
+        </div><br>
+
+        <!--<div class="summary" style="background:#222">-->
+            <!--<div class="w3-quarter w3-section">-->
+                <!--<span class="w3-xlarge">11+</span><br>-->
+                <!--Partners-->
+            <!--</div>-->
+            <!--<div class="w3-quarter w3-section">-->
+                <!--<span class="w3-xlarge">55+</span><br>-->
+                <!--Projects Done-->
+            <!--</div>-->
+            <!--<div class="w3-quarter w3-section">-->
+                <!--<span class="w3-xlarge">89+</span><br>-->
+                <!--Happy Clients-->
+            <!--</div>-->
+            <!--<div class="w3-quarter w3-section">-->
+                <!--<span class="w3-xlarge">150+</span><br>-->
+                <!--Meetings-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <button>
+            <i class="fa fa-download"></i> <a href="cvit.doc">Download Resume (ukrainian)</a>
+        </button>
+        <button>
+            <i class="fa fa-download"></i> <a href="cviteng.docx">Download Resume (english)</a>
+        </button>
+
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="projects">
+        <h2>My Projects</h2>
+        <hr style="width:200px">
+
+        <!-- Grid for photos -->
+        <div style="margin:0 -16px">
+            <div>
+                <a href="http://lmn0212.github.io/angular_gallery/index.html">Angular Gallery</a>
+                <a href="http://lmn0212.github.io/travel_agency/index.html">Landing page for travelling</a>
+
+            </div>
+
+            <div>
+                <a href="http://lmn0212.github.io/News-page/index.html">News page</a>
+                <a href="http://lmn0212.github.io/gallery_viewer/index.html">Gallery viewer</a>
+
+            </div>
+            <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <hr style="width:200px">
+
+        <div>
+            <p><i class="fa fa-map-marker fa-fw"></i> Kyiv, UA</p>
+            <p><i class="fa fa-phone fa-fw"></i> Phone: +380 673628267</p>
+            <p><i class="fa fa-envelope fa-fw"> </i> Email: nlm@list.ru</p>
+        </div><br>
+
+        <!--<p>Lets get in touch. Send me a message:</p>-->
+        <!--<p><input class="w3-input w3-border w3-padding-16" type="text" placeholder="Name"></p>-->
+        <!--<p><input class="w3-input w3-border w3-padding-16" type="text" placeholder="Email"></p>-->
+        <!--<p><input class="w3-input w3-border w3-padding-16" type="text" placeholder="Subject"></p>-->
+        <!--<p><input class="w3-input w3-border w3-padding-16" type="text" placeholder="Comment"></p>-->
+        <!--<p><button class="w3-btn w3-light-grey w3-padding-large w3-hover-grey" type="submit">-->
+            <!--<i class="fa fa-paper-plane"></i> SEND MESSAGE-->
+        <!--</button></p>-->
+        <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
