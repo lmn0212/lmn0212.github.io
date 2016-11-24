@@ -576,7 +576,7 @@ header .headblock .man img {
 .clients {
     width: 80%;
     margin: 0 auto;
-    height: 125px;
+    height: 150px;
     display: block;
 }
 .clients  h3 {
@@ -585,6 +585,7 @@ header .headblock .man img {
 }
 .clients p {
     float: left;
+    margin-left: 8%;
     padding: 0 5%;
     text-align: left;
     line-height: 25px;
