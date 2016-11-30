@@ -109,4 +109,21 @@ h1 {
     .galleries ul .thumbnail .t_gallery {
         width: 100%;
     }
+    .galleries ul .thumbnail .text {
+        font: bold 35px Helvetica sans-serif;
+    }
+
+    /*album page*/
+
+    h1 {
+        text-align: center;
+    }
+
+    .wrapper {
+        margin: 0 15px;
+    }
+    .wrapper .picture {
+        width: 40%;
+        height: 200px;
+    }
 }
