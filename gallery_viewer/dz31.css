@@ -10,6 +10,18 @@ body {
     background-color: azure;
     transition: background-color 1s;
 }
+.instruction {
+    display: block;
+    background-color: chartreuse;
+    width: 200px;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    left: 40px;
+    text-align: center;
+    font: normal bold 21px Georgia, serif;
+}
+
 .gallery {
     position: relative;
     width: 350px;
