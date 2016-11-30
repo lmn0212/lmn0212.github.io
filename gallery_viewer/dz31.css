@@ -8,7 +8,7 @@ html, body {
 }
 body {
     background-color: azure;
-    transition: background-color 2s;
+    transition: background-color 1s;
 }
 .gallery {
     position: relative;
@@ -16,7 +16,7 @@ body {
     height: 250px; 
     margin: 0 auto;
     background: aquamarine;
-    transition: background 3s linear 3s, width 2s, height 2s;
+    transition: background 1s linear 1s, width 1s, height 1s;
     
     text-align: center;
 }
@@ -44,7 +44,7 @@ body {
     opacity: 0.0;
     
     background-size: cover;
-    transition: opacity 2s ease-in/*, transform 1s linear*/;
+    transition: opacity 1s ease-in/*, transform 1s linear*/;
 }
 .gallery .image:hover .big {
     /*display: block;*/
