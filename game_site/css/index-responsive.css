@@ -1,0 +1,668 @@
+@media only screen and (min-width: 1600px){
+    .navbar {
+        height: 50px;
+        max-height: 50px;
+    }
+    .navbar .navbar-brand {
+        line-height: 45px;
+        font-size: 166%;
+    }
+    .nav-menu {
+        font-size: 155%;
+    }
+    .nav>li>a {
+        padding: 13px 0;
+    }
+    .navbar-inverse .nav-menu>li>a:hover {
+        border-bottom: 4px solid #ff0000;
+    }
+    #nav-menu .nav.navbar-nav.messangers a img {
+        height: 1.6em;
+    }
+
+    #nav-menu .nav.navbar-nav.user-icons.navbar-right {
+        min-width: 95px;
+    }
+
+    #nav-menu .nav.navbar-nav.user-icons.navbar-right a i {
+        font-size: 1.35em;
+    }
+
+    #adv h2 {
+        margin-bottom: 4%;
+        font-size: 2em;
+    }
+    #adv .row .advant {
+        margin-bottom: 0;
+    }
+    #adv h3 {
+        font-size: 1.85em;
+    }
+    #adv .row.col-md-10.col-md-offset-1 p {
+        font-size: 1.25em;
+    }
+
+    #counter h3 {
+        font-size: 3em;
+    }
+    #counter p {
+        font-size: 2em;
+    }
+
+    #news h3 {
+        font-size: 1.65em;
+    }
+    #news p,
+    #news .article-footer {
+        font-size: 1.3em;
+    }
+    #news .article-footer a {
+        float: right;
+    }
+
+    .slick-slide {
+        width: 620px;
+    }
+    #feedback .feedback-carousel .feedback-item,
+    #cs-go-feedback .feedback-carousel .feedback-item,
+    #le-le-feedback .feedback-carousel .feedback-item {
+        height: 300px;
+    }
+    #feedback .feedback-item p,
+    #cs-go-feedback .feedback-item p,
+    #le-le-feedback .feedback-item p {
+        font-size: 1.5em;
+    }
+    #feedback h2,
+    #cs-go-feedback h2,
+    #le-le-feedback h2 {
+        font-size: 2.2em;
+    }
+
+    .page-footer .container-fluid .row.col-md-10.col-md-offset-1 .col-md-4 a img {
+        height: 3.7em;
+    }
+    .page-footer form label {
+        font-size: 1.3em;
+    }
+    .page-footer form input[type="email"] {
+        height: 40px;
+        font-size: 1.3em;
+    }
+    .page-footer form .form-btn span {
+        font-size: 1.3em;
+    }
+    .page-footer .contacts {
+        font-size: 1.3em;
+    }
+    /*#left-scrollbar {*/
+        /*height: 240%;*/
+    /*}*/
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar-header {
+        width: 12%;
+    }
+
+    .carousel-indicators {
+        bottom: 20px;
+    }
+    
+    #general .jumbotron p:last-of-type {
+        margin-bottom: 40px;
+    }
+    
+    .header .pointer {
+        bottom: 5px;
+        font-size: 1.5em;
+    }
+    
+    #games .row {
+      padding: 1% 0;
+    }
+
+    #games img {
+        height: 145px
+    }
+
+    #counter h3 {
+        font-size: 1.7em;
+    }
+    
+    .page-footer .form-horizontal .control-label {
+        text-align: center;
+    }
+    .form-horizontal .form-group {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .page-footer form input[type="email"] {
+    width: 66%;
+    }
+    .page-footer form label {
+        font-size: 0.9em;
+    }
+    
+    .page-footer form .form-btn {
+        text-align: right;
+    }
+    
+    /*#left-scrollbar {*/
+        /*height: 408%;*/
+    /*}*/
+}
+
+
+@media (max-width: 992px) {
+    .col-md-10 {
+        padding:0;
+    }
+    .navbar {
+        padding: 0;
+        height: 40px;
+        min-height: 40px;
+        max-height: 40px;
+    }
+    .navbar .navbar-brand {
+        line-height: 35px;
+        font-size: 1.85em;
+    }
+
+    .navbar-brand>img {
+        margin-right: 10px;
+        height: auto;
+    }
+    .navbar.navbar-inverse.navbar-fixed-top .navbar-header {
+        float: none;
+        width: 100%;
+        height: 40px;
+        margin: 0;
+        padding: 0 3%;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 0;
+        padding: 0 5%;
+    }
+    .navbar-nav>li {
+        float: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 50px;
+    }
+    .navbar-nav>li>a {
+        padding: 8px 15px;
+    }
+    .navbar-inverse .navbar-nav>li>a:hover {
+        color: #ff0000;
+        border: 1px solid #ff0000;
+        background-color: rgba(255, 255, 255, 0.30);
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .navbar.navbar-inverse.navbar-fixed-top .navbar-collapse.collapse,
+    .navbar.navbar-inverse.navbar-fixed-top .collapse.in,
+    .navbar.navbar-inverse.navbar-fixed-top .collapsing {
+        width: 100%;
+        background-color: rgba(20, 20, 20, 0.59);
+    }
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border: none;
+    }
+    .nav-menu {
+        width: 280px;
+        float: right !important;
+        min-width: 100px;
+        background: url("../img/navbar-background.png") no-repeat 50% 50%;
+        background-size: 100% 100%;
+        padding: 3% 0;
+    }
+    .navbar.navbar-inverse.navbar-fixed-top .navbar-logo {
+        display: block;
+        color: #eb2629;
+        font-family: "Bauhaus93";
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .navbar .navbar-brand {
+        height: 40px;
+    }
+    .nav>li {
+        width: 60%;
+        margin: 0 auto;
+        margin-left: 28%;
+        height: 100%;
+    }
+    .nav>li:nth-child(2) {
+        padding-top: 5%;
+    }
+    .messangers,
+    .user-icons {
+        display: none;
+    }
+    
+    .carousel-indicators {
+        bottom: 0;
+        margin-bottom: 5px;
+    }
+    
+    #general .jumbotron {
+        top: 35%;
+    }
+    
+    #general .jumbotron h3 {
+        font-size: 3em;
+        margin-top: 10px;
+    }
+    
+    #general .jumbotron .company-name {
+        font-size: 1.1em;
+    }
+    
+    #general .jumbotron .text-center {
+        margin-top: 135px;
+    }
+    #general .jumbotron p:last-of-type {
+        margin-bottom: 25px;
+    }
+    #general .pointer a {
+        bottom: 8%;
+        font-size: 1em;
+    }
+    
+    #games {
+        padding: 0 30px;
+    }
+    
+    #games .img-sizing {
+        margin-top: 3%;
+    }
+    #games img {
+        height: 100px;
+    }
+
+    #adv .row .advant {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    #counter h3 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+    #counter p {
+        font-size: 1em;
+    }
+
+    #news {
+        background-size: 100% 100%;
+    }
+    
+    #news .col-sm-6:nth-child(1),
+    #news .col-sm-6:nth-child(2) {
+        margin-bottom: 2%;
+    }
+    
+     #news .article-footer {
+        border-bottom: 1px solid #4c5457;
+     }
+
+    #news .article-footer a {
+        float: right;
+    }
+
+     .page-footer .row {
+        display: block;
+    }
+    
+    .page-footer .container-fluid .row .col-md-4:first-of-type {
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    
+    .page-footer form {
+        text-align: center;
+    }
+    
+    .page-footer .form-horizontal .control-label {
+        font-size: 1.4em;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .page-footer form input[type="email"] {
+        width: 65%;
+    }
+    
+    .page-footer form .form-btn {
+        padding: 8px 15px;
+    }
+    
+    .page-footer .contacts {
+        text-align: center;
+    }
+    
+    #left-scrollbar {
+        display: none;
+    }
+    
+    .scrollbar-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: wheat;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu li ul li a {
+        color: aquamarine;
+    }
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .container-fluid {
+        padding: 0 10px;
+    }
+    .carousel-indicators {
+        bottom: 1px;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 3px;
+    }
+    .carousel-indicators .active {
+        width: 15px;
+    }
+    #general .jumbotron {
+        top: 81%;
+    }
+    
+    #general .jumbotron .company-center-logo {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+    #general .jumbotron h3 {
+        margin: 0;
+        font-size: 1.1em;
+    }
+    
+    #general .jumbotron .company-name {
+        font-size: 0.6em;
+    }
+
+    #general .jumbotron .text-center {
+        margin-top: -45px;
+    }
+    
+    #general .jumbotron span {
+        font-size: 0.7em;
+    }
+    #general .jumbotron img {
+        vertical-align: baseline;
+        padding: 0 10px;
+        height: 10px;
+        width: 30px;
+    }
+    #general .jumbotron p:last-of-type {
+        font-size: 0.7em;
+        margin-bottom: 20px;
+    }
+    
+    #general .jumbotron a {
+        display: none;
+        font-size: 1em;
+        padding: 5px 20px;
+    }
+    
+     .header .pointer {
+        display: none;
+     }
+     
+     #adv h2 {
+         font-size: 1.3em;
+     }
+
+    #adv .row .advant {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #adv .row.col-md-10.col-md-offset-1 .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3.advant:nth-child(3) {
+        margin: auto;
+    }
+
+    #adv h3 {
+        margin: 2% 0;
+        color: red;
+    }
+
+    #adv .adv-positioning img {
+        height: 35px;
+        display: none;
+    }
+    
+    #adv .adv-features .col-lg-4.col-sm-6:first-of-type .adv-positioning img {
+        height: 20px;
+    }
+    #adv .adv-features .col-sm-4:first-of-type .adv-positioning {
+        margin-top: 20%;
+    }
+    
+    #adv .adv-features h3 {
+        font-size: 1.5em;
+    }
+    
+    #adv .adv-features p {
+        font-size: 0.9em;
+    }
+    
+    /*#games {*/
+        /*padding: 0 10px;*/
+    /*}*/
+    
+    #games .row {
+        padding: 10px;
+    }
+    
+    #games .row .col-xs-2 {
+        padding: 0;
+        box-sizing: content-box;
+    }
+    
+     #adv .adv-positioning {
+         height: auto;
+         margin-bottom: 0;
+     }
+     
+    #adv .adv-features .col-sm-6:nth-child(2) .adv-positioning h3 {
+        margin-top: 20px;
+    }
+     
+    #counter h3 {
+        font-size: 0.9em;
+    }
+    
+    #counter p {
+        font-size: 0.8em;
+    }
+
+    #news {
+        background-image: none;
+        /*background-color: #222a2d;*/
+    }
+    
+    #news h2 {
+        font-size: 1.3em;
+    }
+    
+    #news .col-xs-12 {
+        text-align: center;
+    }
+    
+    #news .col-xs-12 img {
+        margin: 0 auto;
+        width: 70%;
+    }
+    
+    #news h3 {
+        font-size: 1.2em;
+    }
+    
+    #news p {
+        font-size: 1em;
+    }
+    #news .article-footer .col-xs-6:first-child .fa,
+    #news .article-footer .col-xs-6:first-child span{
+        float: left;
+        margin-right: 5px;
+    }
+    
+    #news .article-footer {
+        border-bottom: 1px solid #4c5457;
+        margin-bottom: 5%;
+    }
+    
+    #feedback .user-feedback {
+        width: 90%;
+    }
+    #feedback .feedback-carousel .feedback-item {
+        height: 150px;
+    }
+    #feedback .user-avatar-feedback {
+        width: 21%;
+    }
+    
+    #feedback .user-feedback p {
+        padding: 0 10px;
+    }
+    
+    .page-footer .row {
+        display: block;
+    }
+    
+    .page-footer .container-fluid .row .col-md-4:first-of-type {
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    
+    .page-footer form {
+        text-align: center;
+    }
+    
+    .page-footer .form-horizontal .control-label {
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .page-footer form input[type="email"] {
+        width: 65%;
+        height: 25px;
+    }
+    
+    .page-footer form .form-btn {
+        padding: 3px 10px;
+    }
+    
+    .page-footer .contacts {
+        text-align: center;
+        font-size: 0.8em;
+    }
+    .page-footer .container-fluid .row:nth-child(2) .col-xs-12 .footer-logo img {
+        width: 10%;
+    }
+
+    .page-footer .footer-logo {
+        font-size: 1.25em;
+        line-height: 17px;
+    }
+    /* 
+     #left-scrollbar {
+        display: none;
+    }
+    
+    .scrollbar-nav {
+        display: none;
+    }
+    */
+}
+@media (max-width: 470px){
+
+    #general .jumbotron p:last-of-type {
+        margin-bottom: 1%;
+    }
+    #games {
+        padding: 0;
+    }
+    #games .row {
+        padding: 0;
+        margin: 0;
+    }
+
+    .pie_progress__content, .pie_progress__number, .pie_progress__label, .pie_progress__icon {
+        top: 53%;
+    }
+    #counter h3 {
+        font-size: 0.5em;
+    }
+    #counter p {
+        font-size: 0.4em;
+    }
+    .pie_progress__svg {
+        width: 78%;
+        padding-bottom: 78%;
+    }
+    .slick-slide {
+        width: 200px;
+    }
+
+    #feedback .feedback-item p,
+    #cs-go-feedback .feedback-item p,
+    #le-le-feedback .feedback-item p {
+        font-size: 0.8em;
+    }
+    #feedback h2,
+    #cs-go-feedback h2,
+    #le-le-feedback h2 {
+        font-size: 1.2em;
+    }
+    #feedback .user-avatar-feedback {
+        width: 40%;
+    }
+    .page-footer .container-fluid .row.col-md-10.col-md-offset-1 .col-md-4 a img {
+        height: 2em;
+    }
+
+
+}

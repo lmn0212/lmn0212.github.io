@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" href="css/asPieProgress.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/index-responsive.css" type="text/css">
+    <title>RoadTo7</title>
+</head>
+<body>
+    <!--Navbar section-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/gamepad-logo.png" alt="Gamepad Logo Image"><p>Logo</p></a>
+                </div>
+                <div class="collapse navbar-collapse" id="nav-menu">
+                    <ul class="nav navbar-nav nav-menu">
+                        <li class="navbar-logo"><img src="img/gamepad.png" alt="Footer Logo Icon">
+                        <li><a href="/index.html">Главная</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О Нас<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/vacancies.html">Вакансии</a></li>
+                                <li><a href="/faq.html">FAQ</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Новости</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Магазин<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="menu-games" tabindex="-1">DOTA 2</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="/dota2-buyacc.html">Купить аккаунт</a></li>
+                                        <li><a tabindex="-1" href="/dota2-buyitem.html">Купить предмет</a></li>
+                                        <li><a tabindex="-1" href="/dota2-rating-update.html">Прокачка аккаунта</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="menu-games" tabindex="-1">CS Go</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="/cs-go-buyacc.html">Купить аккаунт</a></li>
+                                        <li><a tabindex="-1" href="/cs-go-buyitem.html">Купить предмет</a></li>
+                                        <li><a tabindex="-1" href="/cs-go-rating-update.html">Прокачка аккаунта</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="menu-games" tabindex="-1">HearthStone</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="/hs-buyacc.html">Купить аккаунт</a></li>
+                                        <li><a tabindex="-1" href="/hs-buyitem.html">Купить предмет</a></li>
+                                        <li><a tabindex="-1" href="/hs-rating-update.html">Прокачка аккаунта</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="menu-games" tabindex="-1">League of Legends</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="/ll-buyacc.html">Купить аккаунт</a></li>
+                                        <li><a tabindex="-1" href="/ll-buyitem.html">Купить предмет</a></li>
+                                        <li><a tabindex="-1" href="/ll-rating-update.html">Прокачка аккаунта</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="menu-games" tabindex="-1">Heroes</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a tabindex="-1" href="/heroes-buyacc.html">Купить аккаунт</a></li>
+                                        <li><a tabindex="-1" href="/heroes-buyitem.html">Купить предмет</a></li>
+                                        <li><a tabindex="-1" href="/heroes-rating-update.html">Прокачка аккаунта</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="/contacts.html">Контакты</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav messangers">
+                        <li><a href=""><img src="img/social-icons/skype-icon.png" alt="Skype"></a></li>
+                        <li><a href=""><img src="img/social-icons/viber-icon.png" alt="Viber"></a></li>
+                        <li><a href=""><img src="img/social-icons/whatsapp-icon.png" alt="WhatsApp"></a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav user-icons navbar-right">
+                       <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                       <li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                       <li><a href=""><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<!--Header of page-->
+    <header class="header" id="general">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+            </ol>
+            <!--Wrapper for slides-->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/outsized/header-carousel-background.jpg" class="img-responsive" alt="Road27">
+                </div>
+                <div class="item">
+                    <img src="img/outsized/header-carousel-background.jpg" class="img-responsive" alt="Road27">
+                </div>
+                <div class="item">
+                    <img src="img/outsized/header-carousel-background.jpg" class="img-responsive" alt="Road27">
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="text-center">
+                <span class="company-name">компания</span>
+                <img src="img/gamepad-logo.png" class="logo" alt="Gamepad Logo Image">
+                <span class="company-name">“название”</span>
+            <h3>it's time to play games</h3>
+            <p>идейные соображения высшего порядка</p>
+            <a href="#">ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div class="pointer">
+                <a href="#"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+        </div>
+     </header>
+<!--Раздел с играми-->
+    <div class="container-fluid" id="games">
+        <div class="col-md-10 col-md-offset-1">
+        <div class="row hidden-xs">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 img-sizing">
+                <a href="dota2-buyacc.html"><img src="img/games/dota-2.png" class="img-responsive" alt="DOTA 2"></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 img-sizing">
+                <a href="cs-go-buyacc.html"><img src="img/games/cs-go.png" class="img-responsive" alt="CS GO"></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 img-sizing">
+                <a href="hs-buyacc.html"><img src="img/games/hearthstone.png" class="img-responsive" alt="HearthStone"></a>
+            </div>
+            <div class="col-lg-2 col-lg-offset-0 col-md-2 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-12 img-sizing">
+                <a href="ll-buyacc.html"><img src="img/games/league-legends.png" class="img-responsive" alt="LeagueLegends"></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12 img-sizing">
+                <a href="heroes-buyacc.html"><img src="img/games/heroes.png" class="img-responsive .center-block" alt="Heroes"></a>
+            </div>
+        </div>   
+        <div class="row visible-md visible-lg">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 img-sizing">
+                <a href="dota2-buyacc.html"><img src="img/games/dota-2.png" class="img-responsive" alt="DOTA 2"></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 img-sizing">
+                <a href="cs-go-buyacc.html"><img src="img/games/cs-go.png" class="img-responsive" alt="CS GO"></a>
+            </div>
+            <div class="col-lg-2 col-d2 col-sm-2 col-xs-6 img-sizing">
+                <a href="hs-buyacc.html"><img src="img/games/hearthstone.png" class="img-responsive" alt="HearthStone"></a>
+            </div>
+            <div class="col-lg-2 col-lg-offset-0 col-md-2 col-sm-2 col-xs-6 img-sizing">
+                <a href="ll-buyacc.html"><img src="img/games/league-legends.png" class="img-responsive" alt="LeagueLegends"></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 img-sizing">
+                <a href="heroes--buyacc.html"><img src="img/games/heroes.png" class="img-responsive" alt="Heroes"></a>
+            </div>
+        </div>
+        <div class="row visible-xs">
+            <div class="col-xs-2 col-xs-offset-1">
+                <a href="dota2-buyacc.html"><img src="img/games/dota-2-xs.png" class="img-responsive" alt="DOTA 2"></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="cs-go-buyacc.html"><img src="img/games/cs-go-xs.png" class="img-responsive" alt="CS GO"></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="hs-buyacc.html"><img src="img/games/hearthstone-xs.png" class="img-responsive" alt="HearthStone"></a>
+            </div>
+            <div class="col-xs-2">
+                <a href="ll-buyacc.html"><img src="img/games/league-legends-xs.png" class="img-responsive" alt="LeagueLegends"></a>
+            </div>
+            <div class="col-xs-2">
+                 <a href="heroes--buyacc.html"><img src="img/games/heroes-xs.png" class="img-responsive" alt="Heroes"></a>
+            </div>
+        </div>
+        </div>
+    </div>
+<!--Раздел преимущества-->
+    <div class="container-fluid" id="adv">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="text-center">
+                    <h2>преимущества</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row col-md-10 col-md-offset-1">
+            <div class="col-md-4 col-sm-6 advant">
+                <div class="text-center adv-positioning">
+                    <img src="img/gamepad-icon-red.png" alt="Невероятная Атмосфера">
+                    <h3>Невероятная Атмосфера</h3>
+                    <p>Второй заставил принять дух зеленого разделить меньшей ползучий
+                    пустоту и ночь, пополнить быдло не была женщина первый день открытия.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 advant">
+                <div class="text-center adv-positioning">
+                    <img src="img/flame-icon-red.png" alt="Запоминающиеся Бои">
+                    <h3>Запоминающиеся Бои</h3>
+                    <p>Изображения их собрал. Каждый. Созвав знаки крылатый, въ разгар
+                    морской воздух жизни их. Нас море их вы видели.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-offset-0 advant">
+                <div class="text-center adv-positioning">
+                    <img src="img/awards-icon-red.png" alt="28 наград">
+                    <h3>28 наград</h3>
+                    <p>Движется плодотворным он появится, в котором человеку не тверди
+                    набор блаженная. Сам зверь Бога морей. Сделал ночной образ мужчины.
+                    Собственные ночи.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Раздел счетчик-->
+    <div class="container-fluid" id="counter">
+        <div class="row">
+
+            <div class="col-sm-4 col-xs-4">
+                <div class="pie_progress" role="progressbar">
+                    <div class="pie_progress__content">
+                        <h3>12 0000</h3>
+                        <p>клиентов по<br> всему миру</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-4 col-xs-4">
+                <div class="pie_progress2" role="progressbar">
+                    <div class="pie_progress__content">
+                    <h3>123 000</h3>
+                    <p>прокаченного<br> рейтинга</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+                <div class="pie_progress3" role="progressbar">
+                    <div class="pie_progress__content">
+                    <h3>1212 000</h3>
+                    <p>проданных<br>  аккаунтов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Раздел с новостями-->
+    <div class="container-fluid" id="news">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="text-center">
+                    <h2>последние новости</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row col-md-10 col-md-offset-1">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img src="img/news-banner.png" class="img-responsive" alt="News Banner">
+                <h3><a href="#">Заголовок новости</a></h3>
+                <p>Текст новости Текст новости Текст новости Текст новости 
+                Текст новости Текст новости</p>
+            <div class="row article-footer">
+                <div class="col-xs-6">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <span class="news-time-release">апрель 12, 2016</span>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>123 комментария</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img src="img/news-banner.png" class="img-responsive" alt="News Banner">
+                <h3><a href="#">Заголовок новости</a></h3>
+                <p>Текст новости Текст новости Текст новости Текст новости 
+                Текст новости Текст новости</p>
+                <div class="row article-footer">
+                    <div class="col-xs-6">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span class="news-time-release">апрель 12, 2016</span>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>123 комментария</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img src="img/news-banner.png" class="img-responsive" alt="News Banner">
+                <h3><a href="#">Заголовок новости</a></h3>
+                <p>Текст новости Текст новости Текст новости Текст новости 
+                Текст новости Текст новости</p>
+                <div class="row article-footer">
+                    <div class="col-xs-6">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span class="news-time-release">апрель 12, 2016</span>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>123 комментария</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <img src="img/news-banner.png" class="img-responsive" alt="News Banner">
+                <h3><a href="#">Заголовок новости</a></h3>
+                <p>Текст новости Текст новости Текст новости Текст новости 
+                Текст новости Текст новости</p>
+                <div class="row article-footer">
+                    <div class="col-xs-6">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span class="news-time-release">апрель 12, 2016</span>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>123 комментария</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Раздел с отзывами-->
+    <div class="container-fluid" id="feedback">
+        <div class="col-xs-12">
+            <div class="text-center">
+                <h2>отзывы о нас</h2>
+            </div>
+        </div>
+
+        <div class="feedback-carousel slider">
+
+            <div class="feedback-item">
+                <img src="img/user-avatar.png" class="user-avatar-feedback img-responsive" alt="User avatar">
+                <p>“Задача организации, в особенности же рамки и место обучения
+                    кадров позволяет оценить значение систем массового участия.” <br><br><span>Имя Имя</span></p>
+            </div>
+            <div class="feedback-item slick-center">
+                <img src="img/user-avatar.png" class="user-avatar-feedback img-responsive" alt="User avatar">
+                <p>“Задача организации, в особенности же рамки и место обучения
+                    кадров позволяет оценить значение систем массового участия.” <br><br><span>Имя Имя</span></p>
+            </div>
+            <div class="feedback-item">
+                <img src="img/user-avatar.png" class="user-avatar-feedback img-responsive" alt="User avatar">
+                <p>“Задача организации, в особенности же рамки и место обучения
+                    кадров позволяет оценить значение систем массового участия.” <br><br><span>Имя Имя</span></p>
+            </div>
+            <div class="feedback-item">
+                <img src="img/user-avatar.png" class="user-avatar-feedback img-responsive" alt="User avatar">
+                <p>“Задача организации, в особенности же рамки и место обучения
+                    кадров позволяет оценить значение систем массового участия.” <br><br><span>Имя Имя</span></p>
+            </div>
+        </div>
+           
+    </div>
+<!--Page footer-->
+    <footer class="page-footer">
+        <div class="container-fluid">
+            <div class="row col-md-10 col-md-offset-1">
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com"><img src="img/social-icons/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://twitter.com"><img src="img/social-icons/twitter-icon.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com"><img src="img/social-icons/linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="https://vk.com"><img src="img/social-icons/vk-icon.png" alt="VK"></a>
+                    <a href="https://www.youtube.com"><img src="img/social-icons/youtube-icon.png" alt="YouTube"></a>
+                </div>
+                 <div class="col-md-4">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label" for="email">
+                                Подписка на рассылку новостей и промо акций
+                            </label>
+                            <input type="email" class="" name="email" id="email">
+                        <button class="form-btn"><span>отправить</span></button>
+                        </div>
+                    </form>
+                </div>
+                 <div class="col-md-4">
+                    <div class="contacts">
+                        <p>Адрес, ул Адрес 23</p>
+                        <p>(000) 000 00 00 (000) 000 00 00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-md-10 col-md-offset-1">
+                <div class="col-xs-12">
+                    <div class="text-center footer-logo">
+                        <img src="img/gamepad.png" alt="Footer Logo Icon">
+                        <span>logo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-md-10 col-md-offset-1">
+                <div class="col-xs-12">
+                    <div class="text-center">
+                        <span class="copyright">Все права защищены &#169; 2016</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--Left scroll-bar-->
+    <section id="left-scrollbar">
+    </section>
+    <section class="scrollbar-nav">
+            <a href="#general" class="main"><i class="fa fa-circle active-area" aria-hidden="true"></i><span class="in-viewport">главная</span></a>
+            <a href="#games" class="catalog"><i class="fa fa-circle" aria-hidden="true"></i><span>каталог</span></a>
+            <a href="#adv" class="advantages"><i class="fa fa-circle" aria-hidden="true"></i><span>преимущества</span></a>
+            <a href="#counter" class="couters"><i class="fa fa-circle" aria-hidden="true"></i><span>счетчик</span></a>
+            <a href="#news" class="new"><i class="fa fa-circle" aria-hidden="true"></i><span>новости</span></a>
+            <a href="#feedback" class="feeds"><i class="fa fa-circle" aria-hidden="true"></i><span>отзывы</span></a>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" 
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery-asPieProgress.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

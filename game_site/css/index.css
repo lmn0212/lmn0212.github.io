@@ -1,0 +1,868 @@
+@font-face {
+    font-family: "FuturaDemiC";
+    src: url(../fonts/futurademic.otf);
+}
+
+@font-face {
+    font-family: "Bauhaus93";
+    src: url(../fonts/bauhaus93.ttf);
+}
+
+@font-face {
+    font-family: "Forum-Regular";
+    src: url(../fonts/forum-regular.ttf);
+}
+
+@font-face {
+    font-family: "Forum-Regular";
+    src: url(../fonts/forum-regular.otf);
+}
+
+@font-face {
+    font-family: "Franklin Gothic Demi";
+    src: url(../fonts/franklingothicdemi.ttf);
+}
+
+@font-face {
+    font-family: "AllianceC";
+    src: local('AllianceC'), 
+        url(../fonts/alliancec.otf);
+}
+
+@font-face {
+    font-family:'FuturaBookC';
+    src: local('FuturaBookC'),
+    url(../fonts/futurabookc.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "FuturaDemiC";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    /*padding:0 99px;*/
+}
+
+
+/* nav section*/
+
+.header {
+    position: relative;
+}
+
+.navbar {
+    height: 30px;
+    min-height: 30px;
+    max-height: 30px;
+    background-color: rgba(1, 0, 0, 0.58);
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+}
+
+.navbar-header {
+    width: 13%;
+}
+
+.navbar .navbar-brand {
+    padding: 0;
+    line-height: 26px;
+    vertical-align: baseline;
+    margin-left: 0;
+    font-family: "Bauhaus93";
+    font-size: 100%;
+}
+
+.navbar-brand>img {
+    display: inline-block;
+    margin-right: 7px;
+    height: 53%;
+}
+.navbar-brand p {
+    margin: 5% 0;
+    float: right;
+}
+
+.nav-menu {
+    width: 64%;
+    font-size: 94%;
+    text-transform: uppercase;
+    min-width: 392px;
+}
+
+.dropdown-menu {
+    background-color: rgba(1, 0, 0, 0.58);
+
+}
+.dropdown-menu li a {
+    color: rgb(255,255,255);
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+.red_color {
+    color: red!important;
+}
+.messangers {
+    width: 9%;
+    min-width: 100px;
+}
+
+.user-icons {
+    min-width: 88px;
+    margin: 0;
+}
+
+#nav-menu .nav.navbar-nav.messangers a img{
+    height: 1.125em;
+}
+#nav-menu .nav.navbar-nav.user-icons.navbar-right a i {
+    font-size: 0.75em;
+}
+
+.user-icons>li {
+    margin-right: 5%;
+}
+
+.nav>li {
+    margin-left: 8%;
+}
+
+.nav>li:last-child {
+
+}
+
+.nav>li>a {
+    color: #ffffff;
+    padding: 3px 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-inverse .nav-menu>li>a:hover {
+    color: #ff0000;
+    border-bottom: 3px solid #ff0000;
+}
+
+
+.navbar-toggle {
+    margin-top: 4px;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top .navbar-logo {
+    display: none;
+}
+
+.nav.navbar-nav.messangers li {
+    float: right;
+}
+
+.nav.navbar-nav.user-icons.navbar-right li {
+    float: right;
+}
+
+/*header section*/
+.header .pointer a {
+    color: rgba(85, 81, 86, 0.59);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-inner>.item {
+    width: 100%;
+}
+
+.carousel-inner>.item>img {
+    width: 100%;
+}
+
+.carousel-indicators {
+    bottom: 46px;
+}
+
+.carousel-indicators li {
+    width: 75px;
+    height: 3px;
+    background-color: rgba(85, 81, 86, 0.59);
+    border: none;
+    margin: 0 10px;
+}
+
+.carousel-indicators .active {
+    width: 75px;
+    height: 3px;
+    background-color: #c0c5cb;
+    margin: 0 10px;
+}
+
+#general .jumbotron {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    transform: translateY(-55%);
+    background: 0;
+    color: #ffffff;
+}
+
+.jumbotron.dota-2 {
+    position: static;
+    background: url("../img/outsized/dota-2-buyaccount-topbackground.jpg") no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron.dota-2 .row:first-of-type,
+.jumbotron.cs-go .row:first-of-type,
+.jumbotron.le-le .row:first-of-type {
+    padding-top: 5%;
+}
+
+.jumbotron.dota-2 .row:last-of-type,
+.jumbotron.cs-go .row:last-of-type,
+.jumbotron.le-le .row:last-of-type {
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    height: 200px;
+}
+
+.jumbotron.cs-go .row:last-of-type,
+.jumbotron.le-le .row:last-of-type{
+    height: 180px;
+}
+
+.jumbotron.dota-2 .row:last-of-type .col-sm-3,
+.jumbotron.dota-2 .row:last-of-type .col-sm-4,
+.jumbotron.cs-go .row:last-of-type .col-sm-3,
+.jumbotron.cs-go .row:last-of-type .col-sm-4,
+.jumbotron.le-le .row:last-of-type .col-sm-3,
+.jumbotron.le-le .row:last-of-type .col-sm-4 {
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 0;
+   
+}
+
+.jumbotron.dota-2 .row:last-of-type .col-sm-3 a,
+.jumbotron.dota-2 .row:last-of-type .col-sm-4 a,
+.jumbotron.cs-go .row:last-of-type .col-sm-3 a,
+.jumbotron.cs-go .row:last-of-type .col-sm-4 a,
+.jumbotron.le-le .row:last-of-type .col-sm-3 a,
+.jumbotron.le-le .row:last-of-type .col-sm-4 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.jumbotron.dota-2 .row:last-of-type .col-sm-3:hover,
+.jumbotron.dota-2 .row:last-of-type .col-sm-4:hover {
+    border-top: 2px solid #6a241e;
+    border-bottom: 2px solid #6a241e;
+    background-image: linear-gradient(90deg, transparent 0%, rgba(31, 44, 53, 0.75) 10%, rgba(31, 44, 53, 0.75) 90%, transparent 100%);
+} 
+
+.jumbotron.cs-go {
+    position: static;
+    background: url("../img/outsized/cs-go-jumbo-bg.jpg") no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron.cs-go .row:last-of-type .col-sm-3:hover,
+.jumbotron.cs-go .row:last-of-type .col-sm-4:hover {
+    border-top: 2px solid #36464e;
+    border-bottom: 2px solid #36464e;
+    background-image: linear-gradient(90deg, transparent 5%, #1c252d 25%, #1c252d 75%, transparent 95%);
+}
+
+.jumbotron.le-le {
+    position: static;
+    background: url("../img/outsized/ll-jumbo-bg.jpg") no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron.le-le .row:last-of-type .col-sm-3:hover,
+.jumbotron.le-le .row:last-of-type .col-sm-4:hover {
+    border-top: 2px solid #f8d60c;
+    border-bottom: 2px solid #f8d60c;
+    background-image: linear-gradient(90deg, transparent 0%, #f6a506 25%, #f6a506 75%, transparent 100%);
+}
+
+    #general .jumbotron .company-center-logo {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    #general .jumbotron h3 {
+        font-family: "BebasNeueBold";
+        text-transform: uppercase;
+        font-size: 2.7em;
+        margin-top: 0.7%;
+        margin-bottom: 0.2%;
+        letter-spacing: 2px;
+    }
+    
+    #general .jumbotron .company-name {
+        font-size: 1.15em;
+        text-transform: uppercase;
+        line-height: 1.15em;
+    }
+    
+    #general .jumbotron img {
+        vertical-align: baseline;
+        padding: 0 10px;
+    }
+    
+    #general .jumbotron p:last-of-type {
+        font-size: 1em;
+        color: #b9b9b9;
+        margin-bottom: 5%;
+    }
+    
+    #general .jumbotron .text-center>a {
+        font-size: 1em;
+        padding: 1% 3%;
+        border: 1px solid #ff2e2e;
+        color: #ffffff;
+    }
+
+#general .pointer a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: #413e44;
+    transform: translate(-50%);
+    font-size: 2em;
+}
+
+#general .pointer a span{
+    font-size: 19px;
+}
+
+/*Games section*/
+
+#games {
+    background: url("../img/outsized/games-background.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#games .row {
+    margin: 2% 0;
+}
+#games img{
+    /*width:80%;*/
+    max-width: 100%;
+    height: 165px;
+}
+#games .col-md-10 .row .col-lg-2.col-md-2.img-sizing:first-child {
+    margin-left: 0;
+    width: 16%;
+}
+#games .col-md-10 .row .col-lg-2.col-md-2.img-sizing:last-child {
+    margin-right: 0;
+    width: 17%;
+    float: right;
+}
+
+    #games .img-sizing {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 19%;
+        margin: 1%;
+        padding: 0;
+    }
+/* Advantages Section*/
+
+/*#adv,*/
+#feedback,
+#filter-block {
+    background: url("../img/outsized/faq-background.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    /*filter: brightness(153%) contrast(0.8);*/
+}
+#adv .row.col-md-10.col-md-offset-1 {
+    /*padding: 0;*/
+}
+
+#adv h2 {
+    color: black;
+    /*color: #ffffff;*/
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+#adv h3 {
+    margin: 8% 0;
+    font-size: 1.35em;
+}
+#adv img {
+    height: 65px;
+}
+
+#adv .adv-positioning {
+    /*display: flex;*/
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: 100%;
+    color: black;
+    /*color: #c0c5cb;*/
+}
+
+#adv .row .advant {
+    padding: 1%;
+    margin-bottom: 0;
+    width: 30%;
+    margin-right: 5%;
+}
+
+#adv .row.col-md-10.col-md-offset-1 .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3.advant:nth-child(3){
+    margin-right: 0;
+}
+#adv .col-md-10.col-md-offset-1 .col-sm-6:nth-child(2) .adv-positioning {
+    /*padding: 0 36px;*/
+}
+#adv .row.col-md-10.col-md-offset-1 .col-md-4.col-md-offset-0.col-sm-6.col-sm-offset-3:nth-child(3) .adv-positioning {
+    float: right;
+}
+#adv .row.col-md-10.col-md-offset-1 p {
+    font-size: 0.9em;
+    font-weight: normal;
+    font-family: Forum-Regular;
+}
+
+/* Counter Section*/
+
+#counter {
+ /*   background: url("../img/outsized/counter-background.png") no-repeat 50% 50%;*/
+    background-color: rgb(0,0,0);
+}
+
+#counter h3 {
+    font-size: 2em;
+    color: #940202;
+    margin-top: 1%;
+}
+
+#counter p {
+    font-size: 1.25em;
+    color: #ffffff;
+    line-height: 1;
+}
+#counter .row .col-xs-3.col-sm-3 {
+    margin-right: 4%;
+}
+
+.pie_progress {
+    padding: 3% 0;
+}
+
+.pie_progress__svg {
+    width: 50%;
+    padding-bottom: 50%;
+}
+
+/*News Section*/
+
+#news {
+    padding-bottom: 1%;
+    /*background: url("../img/outsized/news-background.png") no-repeat 50% 50%;*/
+    background-size: 100% 100%;
+}
+
+    #news h2 {
+        /*color: #ffffff;*/
+        color: black;
+        text-transform: uppercase;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        font-size: 1.5em;
+    }
+
+    #news h3 {
+        font-size: 1.45em;
+    }
+
+    #news h3 a {
+        color: black;
+        /*color: #ffffff;*/
+    }
+
+    #news p {
+        font-family: "Forum-Regular";
+        font-size: 0.9em;
+        color: black;
+        /*color: #dedede;*/
+        text-align: justify;
+    }
+
+    #news .article-footer {
+        font-family: "Forum-Regular";
+        font-size: 0.9em;
+        color: #ff2525;
+        margin-right: -5px;
+        margin-left: -5px;
+
+    }
+#news .row.col-md-10.col-md-offset-1{
+    padding: 0;
+}
+    #news .article-footer .col-xs-6 {
+        padding: 0;
+    }
+
+    #news .article-footer i {
+        padding: 0;
+    }
+
+    #news .article-footer a {
+        color: #ff2525;
+    }
+
+/*Feedback section*/
+
+#feedback,
+#cs-go-feedback,
+#le-le-feedback {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#cs-go-feedback {
+    background: url("../img/outsized/cs-go-feedback-bg.jpg") no-repeat;
+}
+
+#le-le-feedback {
+    background: url("../img/outsized/ll-feedback-bg.jpg") no-repeat;
+}
+
+#feedback h2,
+#cs-go-feedback h2,
+#le-le-feedback h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#feedback .feedback-carousel .feedback-item,
+#cs-go-feedback .feedback-carousel .feedback-item,
+#le-le-feedback .feedback-carousel .feedback-item {
+    position: relative;
+    height: 200px;
+    background-color: rgba(1, 0, 0, 0.58);
+    margin: 0 5px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    /*margin-right: -15px;*/
+}
+
+#feedback .feedback-carousel.slider.slick-initialized.slick-slider.slick-dotted .feedback-item.slick-slide.slick-current.slick-active.slick-center {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+#feedback .user-avatar-feedback,
+#cs-go-feedback .user-avatar-feedback,
+#le-le-feedback .user-avatar-feedback {
+    position: absolute;
+    left: 50%;
+    top: -51px;
+    transform: translate(-50%);
+}
+
+#feedback .feedback-item p, 
+#cs-go-feedback .feedback-item p,
+#le-le-feedback .feedback-item p {
+    font-family: "Forum-Regular";
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-40%);
+    color: #ffffff;
+    padding: 0 10px;
+}
+#feedback #feedback-carousel .carousel-inner,
+#cs-go-feedback #feedback-carousel .carousel-inner,
+#le-le-feedback #feedback-carousel .carousel-inner {
+    display: flex;
+    justify-content: space-around;
+}
+
+#feedback .feedback-item p span,
+#cs-go-feedback .feedback-item p span,
+#le-le-feedback .feedback-item p span {
+    font-family: "Franklin Gothic Demi";
+    margin-top: 20px;
+}
+
+#feedback .carousel-indicators,
+#cs-go-feedback .carousel-indicators,
+#le-le-feedback .carousel-indicators {
+    bottom: 0px;
+}
+
+#feedback .carousel-indicators li,
+#cs-go-feedback .carousel-indicators li,
+#le-le-feedback .carousel-indicators li {
+    margin-right: 5px;
+}
+
+#feedback .carousel-indicators .active,
+#cs-go-feedback .carousel-indicators .active,
+#le-le-feedback .carousel-indicators .active {
+    background-color: #c0c5cb;
+}
+
+#feedback .carousel-indicators li button,
+#cs-go-feedback .carousel-indicators li button,
+#le-le-feedback .carousel-indicators li button {
+    display: none;
+}
+
+
+/*Footer section*/
+
+
+.page-footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: url("../img/outsized/footer-background.png") no-repeat;
+    background-size: cover;
+    filter: brightness(150%) contrast(1.2);
+}
+
+    .page-footer .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+.page-footer .container-fluid .row.col-md-10.col-md-offset-1 {
+    padding: 0;
+}
+.page-footer .container-fluid .row.col-md-10.col-md-offset-1 .col-md-4 {
+    padding: 0;
+}
+
+.page-footer .container-fluid .row.col-md-10.col-md-offset-1 .col-md-4 a {
+    margin-right: 0.7em;
+}
+
+.page-footer .container-fluid .row.col-md-10.col-md-offset-1 .col-md-4 a img {
+    height: 2.7em;
+}
+.form-horizontal .form-group {
+    text-align: center;
+}
+    .page-footer form label {
+
+        font-size: 1em;
+        color: #ffffff;
+    }
+    
+    .page-footer form input[type="email"] {
+        width: 59%;
+        height: 30px;
+        font-size: 1em;
+        background-color: rgba(1, 0, 0, 0.58);
+        border: none;
+        color: #ffffff;
+    }
+    
+    .page-footer form .form-btn {
+        background-color: rgb(235,38,41);
+        border: none;
+        color: #ffffff;
+        padding: 1% 3%;
+        margin-left: -5px;
+    }
+
+    .page-footer form .form-btn span {
+
+        font-size: 1em;
+    }
+    
+    .page-footer .contacts {
+
+        font-size: 0.9em;
+        color: #ffffff;
+        text-align: right;
+    }
+
+    .page-footer .footer-logo {
+        color: rgb(131,131,131);
+        font-family: "Bauhaus93";
+        font-size: 1.85em;
+        line-height: 20px;
+        vertical-align: baseline;
+    }
+
+    .page-footer .footer-logo span {
+        vertical-align: bottom;
+
+    }
+.page-footer .row .col-xs-12 .text-center {
+    margin-top: 5px;
+}
+
+.page-footer .container-fluid .row:nth-child(2) .col-xs-12 .footer-logo img {
+    width: 3%;
+}
+
+/*.page-footer .row .col-xs-12 .text-center.footer-logo {*/
+    /*margin-top: 0.4em;*/
+/*}*/
+
+    .page-footer .copyright {
+        color: #ffffff;
+    }
+    
+/*Scrollbar section*/
+
+#left-scrollbar {
+    /*position: absolute;*/
+    position: fixed;
+    top: 30%;
+    left: 38px;
+    z-index: 800;
+    /*height: 450%;*/
+    height: 30%;
+    /*height: 290%;*/
+    width: 1px;
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.scrollbar-nav {
+    position: fixed;
+    top: 32%;
+    left: 50px;
+    z-index: 800;
+    color: #ffffff;
+}
+
+.scrollbar-nav a {
+    margin: 0;
+    display: block;
+    color: #ffffff;
+}
+
+.scrollbar-nav a span {
+    visibility: hidden;
+}
+
+.scrollbar-nav .main i,
+.scrollbar-nav .catalog i,
+.scrollbar-nav .advantages i,
+.scrollbar-nav .couters i,
+.scrollbar-nav .new i,
+.scrollbar-nav .feeds i,
+.scrollbar-nav .contact i {
+    position: absolute;
+    font-size: 10px;
+    color: rgba(240, 240, 240, 0.5);
+}
+
+.scrollbar-nav .main i {
+    left: -14px;
+    top: 6px;
+}
+
+.scrollbar-nav .catalog i {
+    left: -14px;
+    top: 26px;
+}
+
+.scrollbar-nav .advantages i {
+    left: -14px;
+    top: 46px;
+}
+
+.scrollbar-nav .couters i {
+    left: -14px;
+    top: 66px;
+}
+
+.scrollbar-nav .new i {
+    left: -14px;
+    top: 86px;
+}
+
+.scrollbar-nav .feeds i {
+    left: -14px;
+    top: 106px;
+}
+
+.scrollbar-nav .contact i {
+    left: -14px;
+    top: 126px;
+}
+
+.scrollbar-nav a .in-viewport {
+    visibility: visible;
+}
+
+.scrollbar-nav a i.active-area {
+    font-size: 13px;
+    color: #fff;
+    left: -15px;
+}
+
+.slick-arrow,
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+.slick-slide {
+    opacity: 0.6;
+    transform: scale(0.9);
+    transition: transform 1s ease;
+}
+
+.slick-center {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.carousel-indicators .slick-active {
+    background-color: #c0c5cb;
+}
+
+.slick-dots {
+    list-style: none;
+    text-align: center;
+    display: none;
+}
