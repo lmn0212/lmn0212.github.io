@@ -1,0 +1,325 @@
+@import url("fonts/font-awesome/scss/font-awesome.scss");
+* {
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  height: 100%;
+  padding: 0 185px 0 153px; }
+
+.img:nth-child(3) {
+  padding-left: 16px; }
+
+.img:nth-child(4) {
+  padding-left: 17px; }
+
+.img:nth-child(5) {
+  padding-left: 18px; }
+
+.img:nth-child(6) {
+  padding-left: 19px; }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "PT Serif";
+  font-size: 18px; }
+
+header {
+  background-color: white;
+  height: 108px; }
+  header .wrapper {
+    width: 100%; }
+    header .wrapper #logo {
+      float: left;
+      font-style: italic;
+      color: #bdbdbd;
+      padding-left: 4px; }
+      header .wrapper #logo span {
+        line-height: 104px;
+        font-size: 2.67em;
+        font-family: Oswald;
+        font-weight: bold;
+        font-style: normal;
+        text-transform: uppercase;
+        color: #eb3c00;
+        margin-right: 6px; }
+    header .wrapper .user_conn {
+      float: right;
+      font-style: italic;
+      font-size: 0.722em;
+      text-transform: uppercase; }
+      header .wrapper .user_conn #login {
+        line-height: 108px;
+        color: black;
+        margin-right: 4px; }
+        header .wrapper .user_conn #login i {
+          margin-right: 6px;
+          color: #eb3c00; }
+      header .wrapper .user_conn button {
+        float: right;
+        margin-left: 30px;
+        margin-top: 32px;
+        border: 0;
+        height: 45px;
+        color: white;
+        padding: 14px 56px;
+        background-color: #eb3c00;
+        text-transform: uppercase; }
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+  margin-top: 1px; }
+  .navbar .container-fluid {
+    padding: 0; }
+    .navbar .container-fluid .navbar-collapse {
+      padding-left: 156px;
+      padding-right: 183px;
+      font-family: Oswald;
+      text-transform: uppercase;
+      letter-spacing: 0.6px; }
+      .navbar .container-fluid .navbar-collapse .navbar-nav li a {
+        padding: 26px 17px;
+        color: white; }
+        .navbar .container-fluid .navbar-collapse .navbar-nav li a:hover {
+          background-color: #eb3c00; }
+      .navbar .container-fluid .navbar-collapse .navbar-nav li:nth-child(3) a {
+        padding: 26px 16px; }
+      .navbar .container-fluid .navbar-collapse .navbar-nav li:nth-child(4) a {
+        padding: 26px 20px;
+        letter-spacing: 1px; }
+      .navbar .container-fluid .navbar-collapse .navbar-form {
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        .navbar .container-fluid .navbar-collapse .navbar-form .form-group .form-control {
+          height: 41px;
+          width: 268px;
+          margin-right: -20px;
+          padding: 18px 12px;
+          font-size: 0.750em;
+          text-transform: uppercase;
+          border-radius: 0;
+          color: #e0e0e0 !important; }
+        .navbar .container-fluid .navbar-collapse .navbar-form .form-group button {
+          position: relative;
+          right: 13px;
+          color: #989a9e;
+          background: none;
+          border: none; }
+
+#main {
+  padding-top: 33px;
+  background-color: whitesmoke;
+  display: inline-block; }
+  #main .wrapper h1 {
+    padding-left: 5px;
+    font-size: 2.667em;
+    font-family: Oswald;
+    text-transform: capitalize;
+    line-height: 52px; }
+    #main .wrapper h1 span {
+      line-height: 70px; }
+  #main .wrapper p {
+    font-size: 1.333em;
+    margin-top: 40px;
+    line-height: 26px;
+    padding-left: 4px;
+    width: 108%;
+    font-weight: 500; }
+    #main .wrapper p span {
+      line-height: 47px; }
+      #main .wrapper p span span {
+        margin-left: 4px; }
+  #main .wrapper h4 {
+    margin-top: 30px;
+    padding-left: 4px;
+    font-weight: 600; }
+  #main .wrapper ul {
+    margin-top: 16px;
+    padding-left: 23px;
+    line-height: 23px;
+    font-weight: 600;
+    word-spacing: -2px; }
+    #main .wrapper ul li:first-child {
+      line-height: 23px; }
+      #main .wrapper ul li:first-child span {
+        letter-spacing: -0.5px; }
+    #main .wrapper ul li:nth-child(2) {
+      line-height: 32px; }
+      #main .wrapper ul li:nth-child(2) span {
+        letter-spacing: -0.5px; }
+    #main .wrapper ul li:nth-child(3) span {
+      letter-spacing: -0.7px; }
+      #main .wrapper ul li:nth-child(3) span span {
+        letter-spacing: -0.2px; }
+    #main .wrapper ul li:last-child {
+      line-height: 32px; }
+      #main .wrapper ul li:last-child span {
+        letter-spacing: -0.3px; }
+        #main .wrapper ul li:last-child span span {
+          letter-spacing: -0.8px; }
+  #main #news {
+    clear: left;
+    padding-top: 18px; }
+    #main #news h4 {
+      font-size: 0.75em;
+      letter-spacing: 0.1px;
+      text-transform: uppercase;
+      font-family: Oswald;
+      line-height: 17px;
+      color: #eb3c00; }
+      #main #news h4 span {
+        letter-spacing: 0.4px; }
+    #main #news .news_block {
+      margin-top: 22px;
+      margin-left: -10px;
+      min-height: 188px; }
+      #main #news .news_block .img {
+        padding-right: 0; }
+        #main #news .news_block .img .desc {
+          font-family: Oswald;
+          padding-top: 5px;
+          font-size: 1em;
+          line-height: 25px;
+          letter-spacing: -1px;
+          word-spacing: 1px; }
+          #main #news .news_block .img .desc span {
+            line-height: 13px;
+            word-spacing: 1px;
+            display: block; }
+            #main #news .news_block .img .desc span span {
+              line-height: 2; }
+      #main #news .news_block .img:first-child .desc {
+        text-transform: none;
+        letter-spacing: -1.4px;
+        word-spacing: 3px; }
+        #main #news .news_block .img:first-child .desc span {
+          word-spacing: 3px;
+          display: block; }
+          #main #news .news_block .img:first-child .desc span span {
+            line-height: 30px;
+            display: block; }
+  #main button {
+    float: right;
+    margin-right: 3.5%;
+    margin-top: 127px;
+    margin-bottom: 3%;
+    border: none;
+    font-family: Oswald;
+    font-size: 0.778em;
+    background: none;
+    letter-spacing: -0.2px; }
+    #main button i {
+      margin-top: -4px;
+      margin-right: 3px; }
+
+@media screen and (max-width: 1473px) {
+  body {
+    font-size: 16px; } }
+@media screen and (max-width: 1380px) {
+  body {
+    font-size: 14px; } }
+@media screen and (max-width: 1139px) {
+  body {
+    font-size: 12px; } }
+@media screen and (max-width: 1026px) {
+  .wrapper {
+    padding: 0 15px 0 15px; }
+
+  .navbar .container-fluid .navbar-collapse {
+    padding-left: 15px;
+    padding-right: 20px; }
+
+  .navbar-header,
+  .navbar-collapse {
+    margin-right: 0 !important;
+    margin-left: 0 !important; }
+
+  #main .wrapper p {
+    width: 100%; }
+
+  #main #news .news_block .img:first-child .desc span span {
+    display: inherit; } }
+@media screen and (max-width: 768px) {
+  .navbar .container-fluid .navbar-collapse .navbar-nav li a {
+    padding: 26px 16px !important; }
+
+  .navbar .container-fluid .navbar-collapse .navbar-form .form-group input {
+    display: inline-block; }
+
+  #bs-example-navbar-collapse-1 > form > div > input
+  .navbar .container-fluid .navbar-collapse .navbar-form .form-group button {
+    bottom: 0px;
+    left: -2%; }
+
+  #main #news .news_block {
+    margin-left: 0;
+    min-height: 188px; }
+
+  #main #news .news_block .img {
+    padding-right: 0;
+    padding-left: 0;
+    height: 175px;
+    text-align: center; }
+
+  #main #news .news_block .img a img {
+    margin: auto; } }
+@media screen and (max-width: 500px) {
+  header {
+    height: initial;
+    display: flex; }
+
+  header .wrapper #logo {
+    width: 40%; }
+
+  header .wrapper #logo span {
+    line-height: 1; }
+
+  header .wrapper .user_conn {
+    display: flex;
+    align-items: center; }
+
+  header .wrapper .user_conn #login {
+    line-height: 1; }
+
+  header .wrapper .user_conn button {
+    padding: 10px 10px;
+    margin-left: 0;
+    margin-top: 0; }
+
+  .navbar .container-fluid .navbar-collapse .navbar-nav li a {
+    padding: 8px 16px !important; }
+
+  .form-control {
+    width: 248px; }
+
+  #main {
+    padding-top: 5px; }
+
+  .wrapper h1 {
+    line-height: 40px !important; }
+
+  .wrapper h1 span {
+    line-height: 40px !important; }
+
+  #main .wrapper p span {
+    line-height: 25px; }
+
+  #main button {
+    margin-top: 50px; } }
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 10px; }
+
+  .form-control {
+    width: 225px; }
+
+  #main #news .news_block .img .desc {
+    line-height: 13px; }
+
+  #main #news .news_block .img .desc span {
+    display: initial; } }
+
+/*# sourceMappingURL=index.css.map */
