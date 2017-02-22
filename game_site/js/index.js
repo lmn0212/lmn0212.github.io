@@ -6,7 +6,7 @@ $(function () {
             $('.scrollbar-nav .main span').addClass('in-viewport');
             $('.scrollbar-nav .main i').addClass('active-area');
         } 
-        if (scrolled > 300) {
+        if (scrolled > 200) {
             $('.scrollbar-nav .main span').removeClass('in-viewport');
             $('.scrollbar-nav .main i').removeClass('active-area');
             $('.scrollbar-nav .catalog span').addClass('in-viewport');
@@ -15,7 +15,7 @@ $(function () {
             $('.scrollbar-nav .catalog span').removeClass('in-viewport');
             $('.scrollbar-nav .catalog i').removeClass('active-area');
         }
-        if (scrolled > 880) {
+        if (scrolled > 550) {
             $('.scrollbar-nav .main span').removeClass('in-viewport');
             $('.scrollbar-nav .catalog i').removeClass('active-area');
             $('.scrollbar-nav .catalog span').removeClass('in-viewport');
@@ -26,18 +26,24 @@ $(function () {
             $('.scrollbar-nav .advantages i').removeClass('active-area');
         }
         
-        if (scrolled >= 1200) {
+        if (scrolled >= 750) {
             $('.scrollbar-nav .main span').removeClass('in-viewport');
             $('.scrollbar-nav .advantages i').removeClass('active-area');
             $('.scrollbar-nav .catalog span').removeClass('in-viewport');
             $('.scrollbar-nav .advantages span').removeClass('in-viewport');
             $('.scrollbar-nav .couters span').addClass('in-viewport');
             $('.scrollbar-nav .couters i').addClass('active-area');
+            $('.pie_progress').asPieProgress('start');
+            $('.pie_progress').asPieProgress('go', '90%');
+            $('.pie_progress2').asPieProgress('start');
+            $('.pie_progress2').asPieProgress('go', '70%');
+            $('.pie_progress3').asPieProgress('start');
+            $('.pie_progress3').asPieProgress('go', '40%');
         } else {
             $('.scrollbar-nav .couters span').removeClass('in-viewport');
             $('.scrollbar-nav .couters i').removeClass('active-area');
         }
-        if (scrolled >= 1300) {
+        if (scrolled >= 1050) {
             $('.scrollbar-nav .main span').removeClass('in-viewport');
             $('.scrollbar-nav .couters i').removeClass('active-area');
             $('.scrollbar-nav .catalog span').removeClass('in-viewport');
@@ -50,7 +56,7 @@ $(function () {
             $('.scrollbar-nav .new i').removeClass('active-area');
         }
         
-         if (scrolled >= 1650) {
+         if (scrolled >= 1300) {
             $('.scrollbar-nav .main span').removeClass('in-viewport');
             $('.scrollbar-nav .new i').removeClass('active-area');
             $('.scrollbar-nav .catalog span').removeClass('in-viewport');
@@ -63,6 +69,23 @@ $(function () {
             $('.scrollbar-nav .feeds span').removeClass('in-viewport');
             $('.scrollbar-nav .feeds i').removeClass('active-area');
         }
+
+// scrollbar change color
+
+        $('.scrollbar-nav a').each(function() {
+
+            /* get position of navigation-element (distance from top minus half of it's height, so that it changes color while it's half over black and half over white background) */
+            var elementPositionTop = parseFloat($(this).offset().top) + (parseFloat($(this).height() / 2));
+            /* change color for each background-change */
+            if (elementPositionTop > 416 && elementPositionTop < 840 || elementPositionTop > 1140 && elementPositionTop < 1440 || elementPositionTop > 1740 && elementPositionTop < 2040) {
+                $(this).addClass('greyText');
+
+            } else {
+                $(this).removeClass('greyText');
+
+            }
+        });
+
     });
     $('.faq-item-1').click(function () {
         $('.faq-block-1 .faq-info p').toggleClass('on-active');
@@ -88,10 +111,59 @@ $(function () {
         $('.faq-block-6 .faq-info p').toggleClass('on-active');
         $('.faq-item-6 span').toggleClass('focused');
     });
+
+
+    // Counter section
+
+    $(function($) {
+        $('.pie_progress').asPieProgress({
+            namespace: 'pie_progress',
+            size: 90,
+            speed: 30, // speed of 1/100
+            barcolor: 'rgb(52,163,221)',
+            barsize: '4',
+            trackcolor: 'rgb(95,95,95)',
+            fillcolor: 'none',
+            easing: 'easeOutQuint'
+        });
+
+    });
+
+    $(function($) {
+        $('.pie_progress2').asPieProgress({
+            namespace: 'pie_progress',
+            size: 90,
+            speed: 30, // speed of 1/100
+            barcolor: 'rgb(52,163,221)',
+            barsize: '4',
+            trackcolor: 'rgb(95,95,95)',
+            fillcolor: 'none',
+            easing: 'easeOutQuint'
+        });
+
+    });
+
+    $(function($) {
+        $('.pie_progress3').asPieProgress({
+            namespace: 'pie_progress',
+            size: 90,
+            speed: 40, // speed of 1/100
+            barcolor: 'rgb(52,163,221)',
+            barsize: '4',
+            trackcolor: 'rgb(95,95,95)',
+            fillcolor: 'none',
+            easing: 'easeOutQuint'
+        });
+
+    });
+
+
 });
+
+
 $('.feedback-carousel').slick({
     centerMode: true,
-    centerPadding: '1px',
+    centerPadding: '200px',
     slidesToShow: 3,
     variableWidth: true,
     autoplay: true,
@@ -139,53 +211,3 @@ $('.dropdown').on('hidden.bs.dropdown', function () {
     $(".dropdown-toggle", this).removeClass( "red_color" );
 })
 
-
-// Counter section
-
-$(function($) {
-    $('.pie_progress').asPieProgress({
-        namespace: 'pie_progress',
-        size: 70,
-        speed: 70, // speed of 1/100
-        barcolor: 'rgb(48,213,200)',
-        barsize: '3',
-        trackcolor: 'rgb(95,95,95)',
-        fillcolor: 'none',
-        easing: 'easeOutQuint'
-    });
-    $('.pie_progress').asPieProgress('start');
-    $('.pie_progress').asPieProgress('go', '90%');
-
-});
-
-$(function($) {
-    $('.pie_progress2').asPieProgress({
-        namespace: 'pie_progress',
-        size: 70,
-        speed: 100, // speed of 1/100
-        barcolor: 'rgb(48,213,200)',
-        barsize: '3',
-        trackcolor: 'rgb(95,95,95)',
-        fillcolor: 'none',
-        easing: 'easeOutQuint'
-    });
-    $('.pie_progress2').asPieProgress('start');
-    $('.pie_progress2').asPieProgress('go', '70%');
-
-});
-
-$(function($) {
-    $('.pie_progress3').asPieProgress({
-        namespace: 'pie_progress',
-        size: 70,
-        speed: 120, // speed of 1/100
-        barcolor: 'rgb(48,213,200)',
-        barsize: '3',
-        trackcolor: 'rgb(95,95,95)',
-        fillcolor: 'none',
-        easing: 'easeOutQuint'
-    });
-    $('.pie_progress3').asPieProgress('start');
-    $('.pie_progress3').asPieProgress('go', '40%');
-
-});
