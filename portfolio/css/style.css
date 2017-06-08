@@ -188,6 +188,7 @@ html {
         padding-top: 64px;
         padding-bottom: 64px;
         max-width: 980px;
+        height: 200px;
         margin: auto;
         box-sizing: inherit; }
         html body #main #projects h2 {
@@ -221,6 +222,24 @@ html {
               html body #main #projects div div a:hover {
                 color: #000;
                 background-color: #ccc; }
+            html body #main #projects div div div {
+              display: block;
+              width: 100%;
+              padding: 8px 16px;
+              text-decoration: none;
+              text-align: center;
+              color: inherit;
+              background-color: transparent; }
+              html body #main #projects div div div a {
+                display: inline-block;
+                padding: 8px 10px;
+                text-decoration: none;
+                text-align: center;
+                color: inherit;
+                background-color: transparent; }
+                html body #main #projects div div div a:hover {
+                  color: #000;
+                  background-color: #ccc; }
       html body #main #contact {
         color: #757575;
         padding-top: 64px;
