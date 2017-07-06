@@ -193,6 +193,12 @@ html {
         margin: auto;
         box-sizing: inherit;
         opacity: 0; }
+        @media only screen and (max-width: 568px) {
+          html body #main #projects {
+            height: 320px; } }
+        @media only screen and (max-width: px) {
+          html body #main #projects {
+            height: 430px; } }
         html body #main #projects h2 {
           color: #f1f1f1;
           font-weight: 400;
