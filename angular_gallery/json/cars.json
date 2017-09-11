@@ -2,28 +2,28 @@
     "title": "Cars",
     "images": [
         {
-            "src": "http://pngimg.com/upload/bmw_PNG1683.png",
+            "src": "img/bmw_PNG1683.png",
             "title": "BMW"
         },
         {
-            "src": "http://pngimg.com/upload/mercedes_PNG1898.png",
+            "src": "img/Polar_White_Mercedes_Benz_C_Class.png",
             "title": "Mercedes"
         },
         {
-            "src": "http://pngimg.com/upload/audi_PNG1736.png",
+            "src": "img/audi_PNG1736.png",
             "title": "Audi"
         },
         {
-            "src": "http://www.autoposhcars.com/img/cars/c3.png",
+            "src": "img/citroen-ds5-4929-0.png",
             "title": "Citroen"
         },
         {
-            "src": "http://www.autoposhcars.com/img/cars/kalos.png",
-            "title": "Kalos"
+            "src": "img/coupe.png",
+            "title": "Jaguar"
         },
         {
-            "src": "http://www.meadowsviewcarsales.co.uk/files/car%20one.png",
-            "title": "Mitsubishi"
+            "src": "img/Mirage18-Hero-002.png",
+            "title": "Opel"
         }
     ]
 }
