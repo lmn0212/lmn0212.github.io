@@ -189,16 +189,17 @@ html {
         padding-top: 64px;
         padding-bottom: 64px;
         max-width: 980px;
-        height: 200px;
+        height: 320px;
         margin: auto;
         box-sizing: inherit;
         opacity: 0; }
         @media only screen and (max-width: 568px) {
           html body #main #projects {
-            height: 320px; } }
+            height: 390px;
+            padding-bottom: 30px;} }
         @media only screen and (max-width: 400px) {
           html body #main #projects {
-            height: 430px; } }
+            height: 510px; } }
         html body #main #projects h2 {
           color: #f1f1f1;
           font-weight: 400;
