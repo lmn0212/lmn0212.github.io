@@ -1,0 +1,457 @@
+@font-face{
+font-family: "Myriad Hebrew";
+src : url("fonts/Myriad_Hebrew_Bold.otf");
+}
+@font-face{
+  font-family: "Swagg Bold";
+  src : url("fonts/Swagg_Bold.ttf");
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+$side: 16rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(230,230,230);
+  font-size: 15px;
+  font-family: "Myriad Hebrew", Arial, sans-serif;
+}
+img {
+  height: 80px;
+}
+#upper_text {
+  .wrapper {
+    width: 92%;
+    margin: 4% auto 0;
+    h1 {
+      font-size: 2.5em;
+      text-transform: uppercase;
+      color: rgb(79,79,79);
+      &:last-child {
+        color: rgb(12,178,176)
+      }
+    }
+  }
+}
+#middle_blocks {
+  .wrapper {
+    background: radial-gradient(circle, rgb(250,250,250)15%, rgb(242,242,242)17%, rgb(238,238,238)38%, rgb(235,236,238)42%, rgb(232,234,233)40%,rgb(230,230,230)49%);
+    //background: radial-gradient(circle, rgb(230,230,230)64%, rgb(232,234,233)57%, rgb(235,236,238)49%, rgb(238,238,238)37%, rgb(242,242,242)20%,rgb(250,250,250)10%);
+    width: 92%;
+    margin: 0 auto;
+    @include flexbox();
+    .column-2 {
+      width: 36%;
+      padding-bottom: 4%;
+      display: inline-block;
+      margin-top: 4%;
+      -webkit-box-shadow: -23px 6px 25px -15px rgba(0,0,0,0.51);
+      -moz-box-shadow: -23px 6px 25px -15px rgba(0,0,0,0.51);
+      box-shadow: -23px 6px 25px -15px rgba(0,0,0,0.51);
+      &:first-of-type {
+        -webkit-box-shadow: 17px 6px 25px -13px rgba(0,0,0,0.51);
+        -moz-box-shadow: 17px 6px 25px -13px rgba(0,0,0,0.51);
+        box-shadow: 17px 6px 25px -13px rgba(0,0,0,0.51);
+        .text_block {
+          &:first-of-type {
+            margin-top: $side;
+            margin-bottom: 4rem;
+            h3 {
+              span {
+                color: rgb(255,137,47);
+              }
+            }
+          }
+          h3 {
+            text-align: right;
+            span {
+              color: rgb(12,178,176);
+            }
+          }
+        }
+      }
+      .text_block {
+        background-color: white;
+        padding: 4rem 2rem;
+        height: $side;
+        -webkit-box-shadow: 3px 21px 26px -19px rgba(0,0,0,0.51);
+        -moz-box-shadow: 3px 21px 26px -19px rgba(0,0,0,0.51);
+        box-shadow: 3px 21px 26px -19px rgba(0,0,0,0.51);
+        &:first-of-type {
+          margin-top: 6rem;
+          margin-bottom: 4rem;
+          h3 {
+            span {
+              color: rgb(250,72,94);
+            }
+          }
+        }
+        h3 {
+          font-size: 1.4em;
+          margin-bottom: 1%;
+          text-transform: uppercase;
+          font-family: "Swagg Bold", Arial, sans-serif;
+          color: rgb(103,103,103);
+          span {
+            color: rgb(28,87,129);
+          }
+        }
+        p {
+          color: rgb(201,201,201);
+        }
+      }
+    }
+    .column-1 {
+      position: relative;
+      width: 26%;
+      margin-top: 4%;
+      display: inline-block;
+      .triangle-right {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: $side/2 solid transparent;
+        border-left: $side solid rgb(38,191,205);
+        border-bottom: $side/2 solid transparent;
+        display: inline-block;
+        margin-top: 36rem;
+        &:nth-child(2){
+          margin-top: $side;
+          margin-bottom: 2.3rem;
+          border-left: $side solid rgb(247,143,46);
+          .triangle-topleft {
+            width: 0;
+            height: 0;
+            border-top: $side/2 solid rgb(234,125,43);
+            border-right: $side solid transparent;
+          }
+          .icon {
+            background: url("../icons/dollar-coin-money.svg") no-repeat center;
+            background-size: contain;
+          }
+        }
+        .triangle-topleft {
+          position: absolute;
+          left: -$side;
+          width: 0;
+          height: 0;
+          border-top: $side/2 solid rgb(13,176,175);
+          border-right: $side solid transparent;
+        }
+        .icon {
+          background: url("../icons/icon.svg") no-repeat center;
+          background-size: contain;
+          height: 50px;
+          width: 50px;
+          position: absolute;
+          top: -1.5rem;
+          left: -10rem;
+        }
+      }
+      .triangle-left {
+        position: relative;
+        width: 0;
+        height: 0;
+        border-top: $side/2 solid transparent;
+        border-right: $side solid rgb(18,95,141);
+        border-bottom: $side/2 solid transparent;
+        float: right;
+        display: inline-block;
+        &:first-child {
+          margin-top: 6rem;
+          margin-bottom: 4rem;
+          border-right: $side solid rgb(239,71,86);
+          .triangle-topright {
+            width: 0;
+            height: 0;
+            border-top: $side/2 solid rgb(220,67,87);
+            border-left: $side solid transparent;
+          }
+          .icon {
+            background: url("../icons/magnifying-glass.svg") no-repeat center;
+            background-size: contain;
+          }
+        }
+        .triangle-topright {
+          width: 0;
+          height: 0;
+          border-top: $side/2 solid rgb(15,86,114);
+          border-left: $side solid transparent;
+
+        }
+
+        .icon {
+          background: url("../icons/user.svg") no-repeat center;
+          background-size: contain;
+          height: 50px;
+          width: 50px;
+          position: absolute;
+          top: -1.5rem;
+          left: 7rem;
+        }
+      }
+    }
+  }
+  .mobile {
+    display: none;
+    .row {
+      display: block;
+      height: 10rem;
+      background-color: white;
+      margin-bottom: 4%;
+      -webkit-box-shadow: 3px 21px 26px -19px rgba(0,0,0,0.51);
+      -moz-box-shadow: 3px 21px 26px -19px rgba(0,0,0,0.51);
+      box-shadow: 3px 21px 26px -19px rgba(0,0,0,0.51);
+      .text_block {
+        background-color: white;
+        padding: 1rem 5%;
+
+        h3 {
+          font-size: 1.4em;
+          margin-bottom: 1%;
+          text-transform: uppercase;
+          font-family: "Swagg Bold", Arial, sans-serif;
+          color: rgb(103,103,103);
+          span {
+            color: rgb(28,87,129);
+          }
+        }
+        p {
+          color: rgb(201,201,201);
+        }
+      }
+      .search {
+        h3 {
+          span {
+            color: rgb(250,72,94);
+          }
+        }
+      }
+      .money {
+        text-align: right;
+        h3 {
+          span {
+            color: #ff892f;
+          }
+        }
+      }
+      .stats {
+        text-align: right;
+        h3 {
+          span {
+            color: #0cb2b0;
+          }
+        }
+      }
+      .triangle-right {
+        position: relative;
+        width: 0;
+        height: 0;
+        border-top: 5rem solid transparent;
+        border-left: 10rem solid rgb(38,191,205);
+        border-bottom: 5rem solid transparent;
+        display: inline-block;
+        float: left;
+        .triangle-topleft {
+          position: absolute;
+          left: -10rem;
+          width: 0;
+          height: 0;
+          border-top: 5rem solid rgb(13,176,175);
+          border-right: 10rem solid transparent;
+        }
+        .icon {
+          background: url("../icons/icon.svg") no-repeat center;
+          background-size: contain;
+          height: 30px;
+          width: 30px;
+          position: absolute;
+          top: -1rem;
+          left: -7rem;
+        }
+      }
+      .triangle-right.money {
+        border-left: 10rem solid rgb(247,143,46);
+        .triangle-topleft {
+          width: 0;
+          height: 0;
+          border-top: 5rem solid rgb(234,125,43);
+          border-right: 10rem solid transparent;
+        }
+        .icon {
+          background: url("../icons/dollar-coin-money.svg") no-repeat center;
+          background-size: contain;
+        }
+      }
+      .triangle-left {
+        position: relative;
+        width: 0;
+        height: 0;
+        border-top: 5rem solid transparent;
+        border-right: 10rem solid rgb(18,95,141);
+        border-bottom: 5rem solid transparent;
+        float: right;
+        display: inline-block;
+        .search {
+          border-right: 8rem solid rgb(18,95,141);
+          .triangle-topright {
+            width: 0;
+            height: 0;
+            border-top: 5rem solid rgb(220,67,87);
+            border-left: 10rem solid transparent;
+          }
+          .icon {
+            background: url("../icons/magnifying-glass.svg") no-repeat center;
+            background-size: contain;
+          }
+        }
+        .triangle-topright {
+          width: 0;
+          height: 0;
+          border-top: 5rem solid rgb(15,86,114);
+          border-left: 10rem solid transparent;
+
+        }
+        .icon {
+          background: url("../icons/user.svg") no-repeat center;
+          background-size: contain;
+          height: 30px;
+          width: 30px;
+          position: absolute;
+          top: -1rem;
+          left: 5rem;
+        }
+      }
+      .triangle-left.search {
+        border-top: 5rem solid transparent;
+        border-right: 10rem solid rgb(239,71,86);
+        border-bottom: 5rem solid transparent;
+        .triangle-topright {
+          width: 0;
+          height: 0;
+          border-top: 5rem solid rgb(220,67,87);
+          border-left: 10rem solid transparent;
+        }
+        .icon {
+          background: url("../icons/magnifying-glass.svg") no-repeat center;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+#conclusion {
+  background-color: white;
+  padding: 2% 5%;
+  margin-bottom: 7%;
+  -webkit-box-shadow: 0px 0px 63px -9px rgba(0,0,0,0.51);
+  -moz-box-shadow: 0px 0px 63px -9px rgba(0,0,0,0.51);
+  box-shadow: 0px 0px 63px -9px rgba(0,0,0,0.51);
+  h3 {
+    font-size: 1.9em;
+    margin-bottom: 1%;
+    text-transform: uppercase;
+    font-family: "Swagg Bold", Arial, sans-serif;
+    color: rgb(103,103,103);
+    span {
+      color: rgb(255,137,47);
+    }
+  }
+  p {
+    font-family: Arial, sans-serif;
+    color: rgb(201,201,201);
+    font-size: 1.4em;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  body {
+    font-size: 18px;;
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width: 770px) {
+
+  body {
+    font-size: 14px;
+  }
+  #middle_blocks .wrapper .column-2 .text_block {
+    height: 12rem;
+  }
+  #middle_blocks .wrapper .column-2:first-of-type .text_block:first-of-type {
+    margin-top: 14rem;
+  }
+  #middle_blocks .wrapper .column-1 .triangle-right {
+    border-top: 6rem solid transparent;
+    border-left: 12rem solid #26bfcd;
+    border-bottom: 6rem solid transparent;
+    margin-top: 30rem;
+  }
+  #middle_blocks .wrapper .column-1 .triangle-right:nth-child(2) {
+    border-left: 12rem solid #f78f2e;
+    margin-top: 14rem;
+  }
+  #middle_blocks .wrapper .column-1 .triangle-right:nth-child(2) .triangle-topleft {
+    border-top: 6rem solid #ea7d2b;
+    border-right: 12rem solid transparent;
+  }
+  #middle_blocks .wrapper .column-1 .triangle-right .triangle-topleft {
+    left: -12rem;
+  }
+  #middle_blocks .wrapper .column-1 .triangle-left {
+    border-top: 6rem solid transparent;
+    border-right: 12rem solid #125f8d;
+    border-bottom: 6rem solid transparent;
+  }
+  #middle_blocks .wrapper .column-1 .triangle-left:first-child {
+    border-right: 12rem solid #ef4756;
+  }
+  #middle_blocks .wrapper .column-1 .triangle-left .triangle-topright {
+    border-top: 6rem solid #0f5672;
+    border-left: 12rem solid transparent;
+  }
+  #middle_blocks .wrapper .column-1 .triangle-left:first-child .triangle-topright {
+    border-top: 6rem solid #dc4357;
+    border-left: 12rem solid transparent;
+  }
+  #middle_blocks .wrapper .column-1 .triangle-right .triangle-topleft {
+    left: -12rem;
+    border-top: 6rem solid #0db0af;
+    border-right: 12rem solid transparent;
+  }
+}
+@media only screen and (max-width: 770px) {
+  #middle_blocks .desktop {
+    display: none;
+  }
+  #middle_blocks .mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 770px) and (min-width: 570px) {
+  body {
+    font-size: 17px;;
+  }
+  #middle_blocks .mobile .row .text_block {
+    padding: 2rem 5%;
+  }
+  #middle_blocks .mobile .row .text_block p {
+    width: 70%;
+  }
+  #middle_blocks .mobile .row .text_block.money p,
+  #middle_blocks .mobile .row .text_block.stats p {
+    margin-left: 30%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 13px;;
+  }
+}
