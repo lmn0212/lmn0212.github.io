@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="dashboard-page-wrapper" style="width: 100%">
+    <!-- LEFT NAVIGATION PANEL BEGIN -->
+    <div class="left-side-wrapper">
+        <div class="left-side">
+
+        </div>
+    </div>
+        <!-- модальне вікно Служба підтримки -->
+        <!-- LEFT NAVIGATION PANEL END -->    <!-- CONTENT BEGIN -->
+    <main class="dashboard-main-wrapper main-side" style="width: calc(100% - 225px);">
+        <div id="main-pjax-container" class="ajax-content-container" data-pjax-container="" data-pjax-replace-state="" style="">
+            <div class="main-side equal-side">
+                <h1 class="dash-title">Абоненти</h1>
+
+                <div class="unavailable-wrapper">
+                    <div class="inner">
+                        <div id="filter-row">
+                            <div class="form-group col-sm-3">
+                                <div class="dropdown homeowner">
+                                    <a class="dropdown-toggle" href="#" role="button" id="homeowner-choose" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <h5></h5>
+                                    </a>
+                                    <label for="homeowner-choose" class="dropdown-placeholder">Домоуправитель</label>
+                                    <div class="dropdown-menu" aria-labelledby="homeowner-choose">
+                                        <a class="dropdown-item" href="#">ОСББ Комашка</a>
+                                        <a class="dropdown-item" href="#">ОСББ Ромашка</a>
+                                        <a class="dropdown-item" href="#">ОСББ Ром</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <div class="dropdown object">
+                                    <a class="dropdown-toggle" href="#" role="button" id="object-choose" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <h5></h5>
+                                    </a>
+                                    <label for="object-choose" class="dropdown-placeholder">Об'єкт</label>
+                                    <div class="dropdown-menu" aria-labelledby="object-choose">
+                                        <a class="dropdown-item" href="#">Радунська 42/10</a>
+                                        <a class="dropdown-item" href="#">Радунська 4</a>
+                                        <a class="dropdown-item" href="#">Радунська 10</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input id="support-search" name="support-search" class="form-control" type="text" placeholder="">
+                                <label for="support-search" class="input-placeholder">Пошук абонента</label>
+                            </div>
+                            <div class="next-button-block col-sm-2">
+                                <span class="blue-button">Додати абонента</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="col-sm-6">
+                                <div class="col-sm-6 building">
+                                    <div class="heading dash-title">
+                                        <p>Приміщення</p>
+                                        <i class="fas fa-question-circle"></i>
+                                    </div>
+                                    <div class="content-b">
+                                        <ul>
+                                            <li>Всі</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 abonents">
+                                    <div class="heading dash-title">
+                                        <p>Абонент</p>
+                                    </div>
+                                    <div class="content-a">
+                                        <ul>
+                                            <li>Cоколов Олег Борисович</li>
+                                            <li>Cоколов Олексій Борисович</li>
+                                            <li>Cоколов Роман Борисович</li>
+                                            <li>Cоколова Катерина Борисівна</li>
+                                            <li>Cоколов Андрій Богданович</li>
+                                            <li>Cоколов Борис Олегович</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <p class="building-address">Радунська 42/10</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 characteristic">
+                                        <div class="build-attr">Загальна площа, м2</div>
+                                        <div class="build-value">25 124 м2</div>
+                                    </div>
+                                    <div class="col-sm-6 characteristic">
+                                        <div class="build-attr">Житлова площа, м2</div>
+                                        <div class="build-value">25 124 м2</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 characteristic">
+                                        <div class="build-attr">Оплювальна площа, м2</div>
+                                        <div class="build-value">25 124 м2</div>
+                                    </div>
+                                    <div class="col-sm-6 characteristic">
+                                        <div class="build-attr">Площа у власності, м2</div>
+                                        <div class="build-value">25 124 м2</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 characteristic">
+                                        <div class="build-attr">Нерозподілена площа, м2</div>
+                                        <div class="build-value">25 124 м2</div>
+                                    </div>
+                                    <div class="col-sm-6 characteristic">
+                                        <div class="build-attr">Кількість власників</div>
+                                        <div class="build-value">124</div>
+                                    </div>
+                                </div>
+                                <div class="statistic-row">
+                                    <div class="col-sm-6">
+                                        <div class="donut-container" style="background: rgb(225,232,237);">
+                                            <div class="donut-inner">
+                                            </div>
+                                        </div>
+                                        <h5>Cтруктура нерухомості</h5>
+                                        <ul class="estate-struct">
+                                            <li><i class="fas fa-circle"></i><p>Технічні приміщення</p></li>
+                                            <li><i class="fas fa-circle"></i><p>Технічні приміщення</p></li>
+                                            <li><i class="fas fa-circle"></i><p>Житлові приміщення</p></li>
+                                            <li><i class="fas fa-circle"></i><p>Комерційні приміщення</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="donut-container" style="background: rgb(29,161,242);">
+                                            <div class="donut-inner">
+                                            </div>
+                                        </div>
+                                        <h5>Cтруктура власності</h5>
+                                        <ul class="property-struct">
+                                            <li><i class="fas fa-circle"></i><p>Місцеві ради</p></li>
+                                            <li><i class="fas fa-circle"></i><p>Відомча</p></li>
+                                            <li><i class="fas fa-circle"></i><p>Громадська</p></li>
+                                            <li><i class="fas fa-circle"></i><p>Кооперативна</p></li>
+                                            <li><i class="fas fa-circle"></i><p>Приватна</p></li>
+                                            <li><i class="fas fa-circle"></i><p>Нерозподілена</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="id-row">
+                                    <p class="ident">IDH 000000000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- CONTENT END -->
+    <!-- Login Popup BEGIN -->
+    <!-- Login Popup END -->
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $(".homeowner .dropdown-menu a").click(function () {
+           var  $value = $(this).text();
+            $(".homeowner .dropdown-toggle h5").text($value);
+
+        });
+
+        $(".object .dropdown-menu a").click(function () {
+            var  $value = $(this).text();
+            $(".object .dropdown-toggle h5").text($value);
+            $(".building-address").text($value);
+        });
+        $(".homeowner").click(function () {
+            $(".homeowner .dropdown-placeholder").addClass("activated");
+        });
+        $(".object").click(function () {
+            $(".object .dropdown-placeholder").addClass("activated");
+        });
+    });
+</script>
+</body>
+</html>
