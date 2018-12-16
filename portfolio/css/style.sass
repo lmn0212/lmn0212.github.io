@@ -17,7 +17,7 @@ html
     nav
       display: block
       width: 120px
-      background: #222
+      //background: #222
       height: 100%
       position: fixed
       z-index: 1
@@ -25,6 +25,9 @@ html
       text-align: center
       font-size: 12px
       color: #fff
+      background-image: url("../images/wp2.jpg")
+      background-position: center
+      background-size: cover
       @media screen and (max-width: 793px)
         display: none
       img
@@ -99,7 +102,12 @@ html
         padding-bottom: 32px
         text-align: center
         color: #fff
-        background-color: #000
+        background-image: url("../images/wp2.jpg")
+
+        background-attachment: fixed
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
         h1
           font-size: 64px
           font-weight: 400
@@ -118,10 +126,17 @@ html
         padding-top: 64px
         padding-bottom: 64px
         color: #757575
+        padding-left: 2%
         text-align: justify
         max-width: 980px
         margin: auto
         opacity: 0
+        background-image: url("../images/wp2.jpg")
+
+        background-attachment: fixed
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
         h2
           color: #f1f1f1
           font-weight: 400
@@ -193,11 +208,18 @@ html
       #projects
         padding-top: 64px
         padding-bottom: 64px
+        padding-left: 2%
         max-width: 980px
-        height: 350px
+        height: 450px
         margin: auto
         box-sizing: inherit
         opacity: 0
+        background-image: url("../images/wp2.jpg")
+
+        background-attachment: fixed
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
         @media only screen and (max-width: 568px)
           height: 390px
           padding-bottom: 30px
@@ -242,6 +264,7 @@ html
               text-align: center
               color: inherit
               background-color: transparent
+              float: none
               a
                 display: inline-block
                 padding: 8px 10px
@@ -257,9 +280,16 @@ html
         color: #757575
         padding-top: 64px
         padding-bottom: 204px
+        padding-left: 2%
         max-width: 980px
         margin: auto
         opacity: 0
+        background-image: url("../images/wp2.jpg")
+
+        background-attachment: fixed
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
         h2
           color: #f1f1f1
           font-weight: 400
@@ -278,36 +308,8 @@ html
           margin-top: 16px
           margin-bottom: 16px
         p
-          input
-            padding-top: 16px!important
-            padding-bottom: 16px!important
-            border: 1px solid #ccc!important
-            display: block
-            width: 100%
-            overflow: visible
-            font: inherit
-            margin: 0
-          button
-            color: #000!important
-            background-color: #f1f1f1!important
-            padding: 12px 24px!important
-            transition: $basic-par-trans
-            user-select: none
-            border: none
-            display: inline-block
-            outline: 0
-            vertical-align: middle
-            overflow: hidden
-            text-decoration: none!important
-            text-align: center
-            cursor: pointer
-            white-space: nowrap
-            -webkit-appearance: button
-            text-transform: none
-            font: inherit
-            margin: 0
-            &:hover
-              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+          a
+            color: #757575
 
       footer
         color: #757575
@@ -319,8 +321,3 @@ html
         display: block
         a
           transition: $basic-par-trans
-
-
-
-
-
