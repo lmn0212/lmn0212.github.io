@@ -11,7 +11,7 @@ $(window).scroll(function(){
         target3 = $('#contact'),
         opacity =  (scrollTop - target.offset().top + 350) / (scrollTop / 1.1),
         opacity2 =  (scrollTop - target.offset().top - 200) / (scrollTop / 2),
-        opacity3 =  (scrollTop - target.offset().top - 650) / (scrollTop / 3);
+        opacity3 =  (scrollTop - target.offset().top - 600) / (scrollTop / 3);
 
     if (scrollTop > target.offset().top - $(window).height()) {
         target.css({
