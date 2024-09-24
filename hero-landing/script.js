@@ -1,5 +1,5 @@
 async function getWeather() {
-    const url = "https://api.openweathermap.org/data/2.5/forecast?lat=50.450001&lon=30.523333&cnt=9&units=metric&exclude=hourly,minutely&appid=6ec92d4e1ea53c9aa3ccb8e1ab62e67f";
+    const url = "https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/forecast?lat=50.450001&lon=30.523333&cnt=9&units=metric&exclude=hourly,minutely&appid=6ec92d4e1ea53c9aa3ccb8e1ab62e67f";
 
     try {
         const response = await fetch(url, {
