@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Startup3</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="label">Startup 3</div>
+        <div class="navigation">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="pic-col">
+            <picture>
+                <source srcset="/imgs/Photo.png" media="(max-width: 430px)" />
+                <img src="/imgs/Photo@2x.png" alt="photo" />
+            </picture>
+        </div>
+        <div class="text-col">
+            <h2>Great tool to boost your startup</h2>
+            <div class="text-part">
+                <p>We made it so beutiful and simple. It combines landings, pages, blogs and shop screens. It is definitely the tool you need in your collection! </p>
+            </div>
+            <div class="btns-part">
+                <button class="btn-action" onclick="getWeather();">Get Started</button>
+                <button class="btn-info">Learn More</button>
+            </div>
+            <p class="info-text">
+                By signing up, you agree to the Terms of Service
+            </p>
+        </div>
+        <div class="form-col">
+            <form id="emailForm">
+                <h5 >Subscription for news:</h5>
+                <input type="email" id="uemail" name="uemail" placeholder="Your email" required>
+                <button type="submit" class="btn-action" >Save Email</button>
+            </form>
+        </div>
+        <div class="popup__bg">
+            <div class="popup">
+                <div class="popup_info">
+                    <div class="info-block">
+                        <h5 id="today-heading">Today</h5>
+                        <p id="today">Kyiv +26&deg;</p>
+                    </div>
+                    <div class="info-block">
+                        <h5>Tomorrow</h5>
+                        <p id="tomorrow">Kyiv +24&deg;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
