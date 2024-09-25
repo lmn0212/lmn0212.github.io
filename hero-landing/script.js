@@ -6,6 +6,7 @@ async function getWeather() {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
             },
         });
         const json = await response.json();
