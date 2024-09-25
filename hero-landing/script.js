@@ -1,17 +1,19 @@
 async function getWeather() {
-    const url = "https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/forecast?lat=50.450001&lon=30.523333&cnt=9&units=metric&exclude=hourly,minutely&appid=6ec92d4e1ea53c9aa3ccb8e1ab62e67f";
-
+        // const url = "https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/forecast?lat=50.450001&lon=30.523333&cnt=9&units=metric&exclude=hourly,minutely&appid=6ec92d4e1ea53c9aa3ccb8e1ab62e67f";
+const url = "http://api.weatherstack.com/forecast?access_key=9038b4dc8674470680f6d94d3659b612&query=Kyiv&units=m&interval=24"
     try {
         const response = await fetch(url, {
             method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "https://lmn0212.github.io/hero-landing",
-            },
+            // headers: {
+            //     "Content-Type": "application/json",
+            // },
         });
         const json = await response.json();
-        const todayTemp = json.list[0]["main"]["temp"];
-        const tomorrowTemp = json.list[8]["main"]["temp"];
+        console.log(json);
+        // const todayTemp = json.list[0]["main"]["temp"];
+        // const tomorrowTemp = json.list[8]["main"]["temp"];
+        const todayTemp = json.current.temperature;
+        let tomorrowTemp = Object.values(json.forecast)[0]["avgtemp"];
 
         document.getElementById("today").innerHTML = "Kyiv +"+Math.ceil(todayTemp)+"&deg;";
         document.getElementById("tomorrow").innerHTML = "Kyiv +"+Math.ceil(tomorrowTemp)+"&deg;";
