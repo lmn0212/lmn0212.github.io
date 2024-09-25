@@ -6,7 +6,7 @@ async function getWeather() {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Origin": "https://lmn0212.github.io/hero-landing",
             },
         });
         const json = await response.json();
